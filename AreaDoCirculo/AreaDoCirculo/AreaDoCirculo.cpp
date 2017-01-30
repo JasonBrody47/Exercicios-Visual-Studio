@@ -19,7 +19,7 @@ int main()
     return 0;
 }
 
-/* Essa funcao recebe o valor do raio do usuario e chama a funcao
+/* Essa funcao obtem o valor do raio do usuario e chama a funcao
  * para calcular esse raio.
 */
 void getRaio()
