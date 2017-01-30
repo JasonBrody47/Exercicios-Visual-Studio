@@ -6,11 +6,14 @@
 #include "stdafx.h"
 #include <iostream>
 
+// Prototipo de funcoes.
 void getSalarioPercentual();
 void calcSalario(float salario, float percentual);
 void printSalario(float salario_final, float aumento);
 void limpaBuffer();
 
+/* Funcao principal.
+*/
 int main()
 {
 	getSalarioPercentual();
@@ -18,6 +21,9 @@ int main()
     return 0;
 }
 
+/* Obtem o salario e o percentual de aumento do usuario e envia
+ * como argumento para calcSalario().
+*/
 void getSalarioPercentual()
 {
 	float salario(0);
@@ -34,6 +40,9 @@ void getSalarioPercentual()
 	calcSalario(salario, percentual);
 }
 
+/* Calcula o salario com o percentual recebido e envia 
+ * o resultado para printSalario().
+*/
 void calcSalario(float salario, float percentual)
 {
 	// Converte a porcentagem para decimal.
@@ -43,12 +52,16 @@ void calcSalario(float salario, float percentual)
 	printSalario(salario + aumento, aumento);
 }
 
+/* Exibe o valor de aumento e o salario final na tela.
+*/
 void printSalario(float salario_final, float aumento)
 {
 	std::cout << "\nValor do aumento: " << aumento;
 	std::cout << "\nSalario Final: " << salario_final;
 }
 
+/* Limpa erros e caracteres no buffer de entrada.
+*/
 void limpaBuffer()
 {
 	std::cin.clear();

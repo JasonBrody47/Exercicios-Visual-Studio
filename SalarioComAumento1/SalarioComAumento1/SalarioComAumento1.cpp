@@ -6,10 +6,13 @@
 #include "stdafx.h"
 #include <iostream>
 
+// Prototipo de funcoes.
 void getSalario();
 void calcSalario(float salario);
 void printSalario(float salario_final);
 
+/* Funcao principal.
+*/
 int main()
 {
 	getSalario();
@@ -17,6 +20,9 @@ int main()
     return 0;
 }
 
+/* Obtem a entrada do usuario e envia o numero inteiro como
+ * argumento para calcSalario().
+*/
 void getSalario()
 {
 	float salario(0);
@@ -29,14 +35,19 @@ void getSalario()
 	calcSalario(salario);
 }
 
+/* Calcula o parametro salario recebido com seu aumento de 25%.
+*/
 void calcSalario(float salario)
 {
+	// 0.25 => 25%
 	float aumento = salario * 0.25;
 	salario += aumento;
 
 	printSalario(salario);
 }
 
+/* Exibe o salario com aumento na tela.
+*/
 void printSalario(float salario_final)
 {
 	std::cout << "\nSalario final (com aumento): " << salario_final;

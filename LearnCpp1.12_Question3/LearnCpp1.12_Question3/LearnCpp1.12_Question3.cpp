@@ -9,6 +9,9 @@
 #include "io.h"
 #include <iostream>
 
+/* Funcao principal: Guarda o valor de 2 numeros pela chamada de readNumber(),
+ * faz a soma dos numeros pela chamada de writeAnswer().
+*/
 int main()
 {
 	int number_1 = readNumber();

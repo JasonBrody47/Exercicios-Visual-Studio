@@ -7,11 +7,13 @@
 #include "stdafx.h"
 #include <iostream>
 
+// Prototipo das funcoes.
 void getSalario();
 void calcSalario(float salario);
 void printSalario(float salario_base, float salario_gratificacao, float salario);
 
-
+/* Funcao principal.
+*/
 int main()
 {
 	getSalario();
@@ -19,6 +21,8 @@ int main()
     return 0;
 }
 
+/* Recebe o salario base do usuario e envia o argumento para calcSalario().
+*/
 void getSalario()
 {
 	float salario_base(0);
@@ -30,6 +34,8 @@ void getSalario()
 	calcSalario(salario_base);
 }
 
+/* Calcula o salario com gratificacao e com imposto.
+*/
 void calcSalario(float salario)
 {
 	// Quarda o valor base.
@@ -45,6 +51,8 @@ void calcSalario(float salario)
 	printSalario(salario_base, salario_gratificacao, salario);
 }
 
+/* Exibe o salario base, com gratificacao e com impostos na tela.
+*/
 void printSalario(float salario_base, float salario_gratificacao, float salario)
 {
 	std::cout << "Salario base: " << salario_base;

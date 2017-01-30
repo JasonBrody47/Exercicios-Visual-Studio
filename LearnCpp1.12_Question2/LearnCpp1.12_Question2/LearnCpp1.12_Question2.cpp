@@ -11,6 +11,9 @@
 int readNumber();
 void writeAnswer(int result);
 
+/* Funcao principal: Guarda o valor de 2 numeros por meio de readNumber(),
+ * faz a soma deles e envia como argumento para whiteAnswer();
+*/
 int main()
 {
 	int number_1 = readNumber();

@@ -10,6 +10,9 @@
 int readNumber();
 void writeAnswer(int result);
 
+/* Funcao principal: Guarda o valor de 2 numeros por meio de readNumber(),
+ * chama a funcao para imprimir o resultado na tela com a soma dos numeros.
+*/
 int main()
 {
 	int number_1 = readNumber();
@@ -22,6 +25,8 @@ int main()
     return 0;
 }
 
+/* Essa funcao recebe um numero inteiro do usuario e retorna ao chamador.
+*/
 int readNumber()
 {
 	std::cout << "Insira um numero inteiro > ";
@@ -33,6 +38,8 @@ int readNumber()
 	return number;
 }
 
+/* Essa funcao exibe o resultado da soma na tela.
+*/
 void writeAnswer(int result)
 {
 	std::cout << "A soma e: " << result << "\n";

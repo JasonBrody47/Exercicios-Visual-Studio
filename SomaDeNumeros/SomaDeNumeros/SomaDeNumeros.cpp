@@ -64,7 +64,7 @@ void exibirSoma(int soma)
 	std::cout << "Resultado da soma: " << soma;
 }
 
-/* Limpa erros e caracteres no buffer de imput.
+/* Limpa erros e caracteres no buffer de entrada.
 */
 void limparBuffer()
 {

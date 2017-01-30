@@ -1,6 +1,8 @@
 #include "stdafx.h"
 #include <iostream>
 
+/* Le a entrada do usuario e retorna o numero inteiro ao chamador.
+*/
 int readNumber()
 {
 	std::cout << "Insira um numero inteiro > ";
@@ -12,6 +14,8 @@ int readNumber()
 	return number;
 }
 
+/* Exibe a soma dos numeros na tela.
+*/
 void writeAnswer(int result)
 {
 	std::cout << "A soma e: " << result << "\n";

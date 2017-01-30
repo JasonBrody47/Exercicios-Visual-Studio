@@ -1,15 +1,18 @@
-// Esse programa recebe a base e altura de um triangul, calcula e mostra o resultado da area.
+// Esse programa recebe a base e altura de um triangulo, calcula e mostra o resultado da area.
 // Criado por Luan Eduardo.
 // Perfil GitHub: https://github.com/JasonBrody47
 
 #include "stdafx.h"
 #include <iostream>
 
+// Prototipo de funcoes.
 void getMedidas();
 void calcArea(float base, float altura);
 void printArea(float area);
 void limpaBuffer();
 
+/* Funcao principal.
+*/
 int main()
 {
 	getMedidas();
@@ -17,6 +20,9 @@ int main()
     return 0;
 }
 
+/* Essa funcao obtem a base e altura do triangulo do usuario
+ * e chama outra funcao para calcular a area.
+*/
 void getMedidas()
 {
 	float base, altura;
@@ -32,17 +38,23 @@ void getMedidas()
 	calcArea(base, altura);
 }
 
+/* Essa funcao calcula a area pelos parametros base e altura recebidos.
+*/
 void calcArea(float base, float altura)
 {
 	float area = (base * altura) / 2;
 	printArea(area);
 }
 
+/* Essa funcao exibe o resultado da area na tela.
+*/
 void printArea(float area)
 {
 	std::cout << "\nArea do triangulo: " << area;
 }
 
+/* Limpa erros e caracteres no buffer de entrada.
+*/
 void limpaBuffer()
 {
 	std::cin.clear();
