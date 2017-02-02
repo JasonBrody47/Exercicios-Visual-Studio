@@ -5,4 +5,3 @@
 In the source codes comment the `#include "stdafx"` line.
 
 Created by **_Luan Eduardo_.** Here is my [GitHub Profile] (https://github.com/JasonBrody47).
-Teste Revert
