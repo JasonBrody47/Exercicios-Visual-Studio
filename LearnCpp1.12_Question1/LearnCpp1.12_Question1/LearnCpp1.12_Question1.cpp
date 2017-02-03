@@ -15,8 +15,12 @@ void writeAnswer(int result);
 */
 int main()
 {
-	int number_1 = readNumber();
-	int number_2 = readNumber();
+	//int number_1 = readNumber();
+	//int number_2 = readNumber();
+
+	// Inicialização uniforme (C++11).
+	int number_1{ readNumber() };
+	int number_2{ readNumber() };
 	// int sum = number_1 + number_2;
 	writeAnswer(number_1 + number_2);
 
@@ -30,7 +34,7 @@ int main()
 int readNumber()
 {
 	std::cout << "Insira um numero inteiro > ";
-	int number(1);
+	int number;
 	std::cin >> number;
 	std::cin.clear();
 	std::cin.ignore();
