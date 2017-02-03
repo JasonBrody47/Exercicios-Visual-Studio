@@ -16,8 +16,13 @@ void writeAnswer(int result);
 */
 int main()
 {
-	int number_1 = readNumber();
-	int number_2 = readNumber();
+	// int number_1 = readNumber();
+	// int number_2 = readNumber();
+
+	// Inicialização uniforme (C++11).
+	int number_1{ readNumber() };
+	int number_2{ readNumber() };
+
 	// int sum =  number_1 + number_2;
 	writeAnswer(number_1 + number_2);
 
