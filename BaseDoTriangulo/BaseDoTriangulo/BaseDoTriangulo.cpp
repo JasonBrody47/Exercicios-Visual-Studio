@@ -25,13 +25,13 @@ int main()
 */
 void getMedidas()
 {
-	float base, altura;
-
 	std::cout << "Insira a base do triangulo > ";
+	float base;
 	std::cin >> base;
 	limpaBuffer();
 
 	std::cout << "\nInsira a altura do triangulo > ";
+	float altura;
 	std::cin >> altura;
 	limpaBuffer();
 

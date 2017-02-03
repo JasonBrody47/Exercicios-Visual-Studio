@@ -24,10 +24,10 @@ int main()
 */
 void getRaio()
 {
-	float raio;
-
 	std::cout << "Insira o raio do circulo > ";
+	float raio;
 	std::cin >> raio;
+
 	std::cin.clear();
 	std::cin.ignore();
 
