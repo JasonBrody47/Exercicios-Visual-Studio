@@ -26,8 +26,8 @@ int main()
 */
 void getSalario()
 {
-	float salario_base(0);
 	std::cout << "Insira seu salario base > ";
+	float salario_base{};
 	std::cin >> salario_base;
 	std::cin.clear();
 	std::cin.ignore();
@@ -41,11 +41,11 @@ void getSalario()
 void calcSalario(float salario)
 {
 	// Quarda o valor base
-	float salario_base = salario;
+	float salario_base{ salario };
 
 	// Subtrai o salario com o imposto resultante
 	salario -= (salario * 0.10);
-	float salario_imposto = salario;
+	float salario_imposto{ salario };
 
 	// Soma o salario a gratificacao
 	salario += 50;

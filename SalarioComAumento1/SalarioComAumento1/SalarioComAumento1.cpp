@@ -25,10 +25,10 @@ int main()
 */
 void getSalario()
 {
-	float salario(0);
-
 	std::cout << "Insira seu salario > ";
+	float salario{};
 	std::cin >> salario;
+
 	std::cin.clear();
 	std::cin.ignore();
 

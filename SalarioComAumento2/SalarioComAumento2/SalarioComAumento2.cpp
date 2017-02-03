@@ -26,14 +26,13 @@ int main()
 */
 void getSalarioPercentual()
 {
-	float salario(0);
-	int percentual(0);
-
 	std::cout << "Insira seu salario > ";
+	float salario{};
 	std::cin >> salario;
 	limpaBuffer();
 
 	std::cout << "\nInsira o percentual de aumento > ";
+	int percentual{};
 	std::cin >> percentual;
 	limpaBuffer();
 

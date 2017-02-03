@@ -26,17 +26,18 @@ int main()
 */
 void obterNota()
 {
-	float nota_1, nota_2, nota_3;
-
 	std::cout << "Insira a primeira nota > ";
+	float nota_1;
 	std::cin >> nota_1;
 	limparBuffer();
 
 	std::cout << "\nInsira a segunda nota > ";
+	float nota_2;
 	std::cin >> nota_2;
 	limparBuffer();
 
 	std::cout << "\nInsira a terceira nota > ";
+	float nota_3;
 	std::cin >> nota_3;
 	limparBuffer();
 

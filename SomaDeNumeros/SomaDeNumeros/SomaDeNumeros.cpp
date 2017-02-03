@@ -26,21 +26,23 @@ int main()
 */
 void lerNumeros()
 {
-	int num_1, num_2, num_3, num_4;
-
 	std::cout << "Insira o primeiro numero > ";
+	int num_1{};
 	std::cin >> num_1;
 	limparBuffer();
 
 	std::cout << "Insira o segundo numero > ";
+	int num_2{};
 	std::cin >> num_2;
 	limparBuffer();
 
 	std::cout << "Insira o terceiro numero > ";
+	int num_3{};
 	std::cin >> num_3;
 	limparBuffer();
 
 	std::cout << "Insira o quarto numero > ";
+	int num_4{};
 	std::cin >> num_4;
 	limparBuffer();
 

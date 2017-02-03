@@ -25,27 +25,30 @@ int main()
 */
 void getNotas()
 {
-	float nota_1, nota_2, nota_3;
-	float peso_n1, peso_n2, peso_n3;
-
 	std::cout << "Nota 1 > ";
+	float nota_1;
 	std::cin >> nota_1;
 	limparBuffer();
 	std::cout << "\nPeso da Nota 1 > ";
+	float peso_n1;
 	std::cin >> peso_n1;
 	limparBuffer();
 
 	std::cout << "Nota 2 > ";
+	float nota_2;
 	std::cin >> nota_2;
 	limparBuffer();
 	std::cout << "\nPeso da Nota 2 > ";
+	float peso_n2;
 	std::cin >> peso_n2;
 	limparBuffer();
 
 	std::cout << "Nota 3 > ";
+	float nota_3;
 	std::cin >> nota_3;
 	limparBuffer();
 	std::cout << "\nPeso da Nota 3 > ";
+	float peso_n3;
 	std::cin >> peso_n3;
 	limparBuffer();
 
