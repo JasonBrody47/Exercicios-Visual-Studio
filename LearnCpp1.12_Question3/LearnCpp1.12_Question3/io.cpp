@@ -1,12 +1,13 @@
 #include "stdafx.h"
 #include <iostream>
+#include <cstdint>
 
 /* Le a entrada do usuario e retorna o numero inteiro ao chamador.
 */
 int readNumber()
 {
 	std::cout << "Insira um numero inteiro > ";
-	int number(1);
+	int number{};
 	std::cin >> number;
 	std::cin.clear();
 	std::cin.ignore();

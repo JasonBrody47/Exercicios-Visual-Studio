@@ -6,7 +6,7 @@
 int readNumber()
 {
 	std::cout << "Insira um numero inteiro > ";
-	int number(1);
+	int number{};
 	std::cin >> number;
 	std::cin.clear();
 	std::cin.ignore();
