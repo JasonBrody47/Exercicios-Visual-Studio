@@ -1,6 +1,5 @@
 #include "stdafx.h"
 #include <iostream>
-#include <cstdint>
 
 /* Le a entrada do usuario e retorna o numero inteiro ao chamador.
 */
