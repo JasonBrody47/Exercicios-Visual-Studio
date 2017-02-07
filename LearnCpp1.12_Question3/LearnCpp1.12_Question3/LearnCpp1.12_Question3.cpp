@@ -8,6 +8,7 @@
 #include "stdafx.h"
 #include "io.h"
 #include <iostream>
+#include <cstdint>
 
 /* Funcao principal: Guarda o valor de 2 numeros pela chamada de readNumber(),
  * faz a soma dos numeros pela chamada de writeAnswer().
@@ -18,8 +19,8 @@ int main()
 	// int number_2 = readNumber();
 
 	// Inicialicao uniforme (C++11).
-	int number_1{ readNumber() };
-	int number_2{ readNumber() };
+	std::int32_t number_1{ readNumber() };
+	std::int32_t number_2{ readNumber() };
 
 	// int sum = number_1 + number_2;
 	writeAnswer(number_1 + number_2);

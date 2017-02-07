@@ -5,6 +5,7 @@
 
 #include "stdafx.h"
 #include <iostream>
+#include <cstdint>
 
 // Prototipo de funcoes.
 void getSalarioPercentual();
@@ -32,7 +33,7 @@ void getSalarioPercentual()
 	limpaBuffer();
 
 	std::cout << "\nInsira o percentual de aumento > ";
-	int percentual{};
+	std::int32_t percentual{};
 	std::cin >> percentual;
 	limpaBuffer();
 

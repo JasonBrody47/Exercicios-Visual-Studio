@@ -6,10 +6,11 @@
 
 #include "stdafx.h"
 #include <iostream>
+#include <cstdint>
 
 // Forward declaration (declaracao prototipo).
 int readNumber();
-void writeAnswer(int result);
+void writeAnswer(std::int32_t result);
 
 /* Funcao principal: Guarda o valor de 2 numeros por meio de readNumber(),
  * faz a soma deles e envia como argumento para whiteAnswer();
@@ -20,8 +21,8 @@ int main()
 	// int number_2 = readNumber();
 
 	// Inicialização uniforme (C++11).
-	int number_1{ readNumber() };
-	int number_2{ readNumber() };
+	std::int32_t number_1{ readNumber() };
+	std::int32_t number_2{ readNumber() };
 
 	// int sum =  number_1 + number_2;
 	writeAnswer(number_1 + number_2);

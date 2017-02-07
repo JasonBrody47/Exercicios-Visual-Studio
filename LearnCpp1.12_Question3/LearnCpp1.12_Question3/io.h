@@ -2,8 +2,14 @@
 #ifndef INCLUDED_IO_H
 #define INCLUDED_IO_H
 
-// Forward declaration (prototipo de declaracao).
-int readNumber();
-void writeAnswer(int result);
+#include <cstdint>
+
+/* Le a entrada do usuario e retorna o numero inteiro ao chamador.
+*/
+std::int32_t readNumber();
+
+/* Exibe a soma dos numeros na tela.
+*/
+void writeAnswer(std::int32_t result);
 
 #endif // !INCLUDED_IO_H

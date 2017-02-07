@@ -4,11 +4,12 @@
 
 #include "stdafx.h"
 #include <iostream>
+#include <cstdint>
 
 // Prototipos das funcoes.
 void lerNumeros();
-void somarNumeros(int n1, int n2, int n3, int n4);
-void exibirSoma(int soma);
+void somarNumeros(std::int32_t n1, std::int32_t n2, std::int32_t n3, std::int32_t n4);
+void exibirSoma(std::int32_t soma);
 void limparBuffer();
 
 /* Funcao principal.
@@ -27,22 +28,22 @@ int main()
 void lerNumeros()
 {
 	std::cout << "Insira o primeiro numero > ";
-	int num_1{};
+	std::int32_t num_1{};
 	std::cin >> num_1;
 	limparBuffer();
 
 	std::cout << "Insira o segundo numero > ";
-	int num_2{};
+	std::int32_t num_2{};
 	std::cin >> num_2;
 	limparBuffer();
 
 	std::cout << "Insira o terceiro numero > ";
-	int num_3{};
+	std::int32_t num_3{};
 	std::cin >> num_3;
 	limparBuffer();
 
 	std::cout << "Insira o quarto numero > ";
-	int num_4{};
+	std::int32_t num_4{};
 	std::cin >> num_4;
 	limparBuffer();
 
@@ -53,7 +54,7 @@ void lerNumeros()
  * soma esses valores e envia o resultado como argumento
  * para outra chamada de funcao.
 */
-void somarNumeros(int n1, int n2, int n3, int n4)
+void somarNumeros(std::int32_t n1, std::int32_t n2, std::int32_t n3, std::int32_t n4)
 {
 	exibirSoma(n1 + n2 + n3 + n4);
 }
@@ -61,7 +62,7 @@ void somarNumeros(int n1, int n2, int n3, int n4)
 /* Essa funcao recebe a soma pelo argumento passado
  * e exibe o resultado na tela. 
 */
-void exibirSoma(int soma)
+void exibirSoma(std::int32_t soma)
 {
 	std::cout << "Resultado da soma: " << soma;
 }
