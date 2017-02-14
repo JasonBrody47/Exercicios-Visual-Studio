@@ -2,7 +2,7 @@
 // soma e exibe o resultado dos 2.
 // Neste as funcoes estao reunidas em outro arquivo (io.cpp).
 // Criado por Luan Eduardo.
-// Perfil GitHub: https://github.com/JasonBrody47
+// Perfil GitHub: https://github.com/LuanEduardo47
 
 #include "stdafx.h"
 #include <iostream>

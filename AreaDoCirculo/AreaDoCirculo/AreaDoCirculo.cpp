@@ -1,6 +1,6 @@
 // Esse programa recebe o raio de um circulo, calcula e mostra sua area.
 // Criado por Luan Eduardo.
-// Perfil GitHub: https://github.com/JasonBrody47
+// Perfil GitHub: https://github.com/LuanEduardo47
 
 #include "stdafx.h"
 #include <iostream>

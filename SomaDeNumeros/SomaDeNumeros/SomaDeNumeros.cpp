@@ -1,6 +1,6 @@
 // Este programa le, calcula e exibe a soma de 4 numeros.
 // Criado por Luan Eduardo.
-// Perfil GitHub: https://github.com/JasonBrody47
+// Perfil GitHub: https://github.com/LuanEduardo47
 
 #include "stdafx.h"
 #include <iostream>

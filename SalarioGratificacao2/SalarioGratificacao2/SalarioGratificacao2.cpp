@@ -2,7 +2,7 @@
 // salario a receber, sabendo que o funcionario tem gratificacao de R$ 50 e paga
 // imposto de 10% sobre o salario base.
 // Criado por Luan Eduardo.
-// Perfil GitHub: https://github.com/JasonBrody47
+// Perfil GitHub: https://github.com/LuanEduardo47
 
 #include "stdafx.h"
 #include <iostream>

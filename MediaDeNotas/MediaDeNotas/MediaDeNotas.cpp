@@ -1,6 +1,6 @@
 // Este programa obtem 3 notas do usuario, calcula a media e exibe a media na tela.
 // Criado por Luan Eduardo.
-// Perfil GitHub: https://github.com/JasonBrody47
+// Perfil GitHub: https://github.com/LuanEduardo47
 
 #include "stdafx.h"
 #include <iostream>

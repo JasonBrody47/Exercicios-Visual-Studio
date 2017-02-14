@@ -3,7 +3,7 @@
 // Neste as funcoes estao reunidas em outro arquivo (io.cpp)
 // E o arquivo io.cpp e chamado pelo cabecalho io.h. 
 // Criado por Luan Eduardo.
-// Perfil GitHub: https://github.com/JasonBrody47
+// Perfil GitHub: https://github.com/LuanEduardo47
 
 #include "stdafx.h"
 #include "io.h"

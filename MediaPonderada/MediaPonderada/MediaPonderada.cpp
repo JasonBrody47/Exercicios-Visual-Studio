@@ -1,6 +1,6 @@
 // Este programa recebe 3 notas e seus pesos, calcula e mostra a media ponderada.
 // Criado por Luan Eduardo.
-// Perfil GitHub: https://github.com/JasonBrody47
+// Perfil GitHub: https://github.com/LuanEduardo47
 
 #include "stdafx.h"
 #include <iostream>

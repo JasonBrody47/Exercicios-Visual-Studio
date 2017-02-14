@@ -1,7 +1,7 @@
 // Esse programa recebe o salario de um funcionario e o percentual de aumento, calcula e mostra
 // o valor do aumento e o novo salario.
 // Criado por Luan Eduardo.
-// Perfil GitHub: https://github.com/JasonBrody47
+// Perfil GitHub: https://github.com/LuanEduardo47
 
 #include "stdafx.h"
 #include <iostream>

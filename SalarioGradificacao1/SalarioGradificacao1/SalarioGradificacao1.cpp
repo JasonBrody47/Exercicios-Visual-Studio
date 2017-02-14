@@ -2,7 +2,7 @@
 // a receber, sabendo que tem 5% de gratificacao sobre o salario base e paga imposto
 // de 7% sobre este salario.
 // Criado por Luan Eduardo.
-// Perfil GitHub: https://github.com/JasonBrody47
+// Perfil GitHub: https://github.com/LuanEduardo47
 
 #include "stdafx.h"
 #include <iostream>
