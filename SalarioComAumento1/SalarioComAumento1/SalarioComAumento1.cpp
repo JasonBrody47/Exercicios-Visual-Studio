@@ -8,8 +8,8 @@
 
 // Prototipo de funcoes.
 void getSalario();
-void calcSalario(float salario);
-void printSalario(float salario_final);
+void calcSalario(double salario);
+void printSalario(double salario_final);
 
 /* Funcao principal.
 */
@@ -26,7 +26,7 @@ int main()
 void getSalario()
 {
 	std::cout << "Insira seu salario > ";
-	float salario{};
+	double salario{};
 	std::cin >> salario;
 
 	std::cin.clear();
@@ -37,10 +37,10 @@ void getSalario()
 
 /* Calcula o parametro salario recebido com seu aumento de 25%.
 */
-void calcSalario(float salario)
+void calcSalario(double salario)
 {
 	// 0.25 => 25%
-	float aumento = salario * 0.25;
+	double aumento = salario * 0.25;
 	salario += aumento;
 
 	printSalario(salario);
@@ -48,7 +48,7 @@ void calcSalario(float salario)
 
 /* Exibe o salario com aumento na tela.
 */
-void printSalario(float salario_final)
+void printSalario(double salario_final)
 {
 	std::cout << "\nSalario final (com aumento): " << salario_final;
 }

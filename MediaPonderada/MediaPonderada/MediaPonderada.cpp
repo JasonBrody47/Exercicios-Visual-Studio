@@ -7,8 +7,8 @@
 
 // Prototipo das funcoes.
 void getNotas();
-void calcMedia(float n1, float n2, float n3, float p1, float p2, float p3);
-void printMedia(float media);
+void calcMedia(double n1, double n2, double n3, double p1, double p2, double p3);
+void printMedia(double media);
 void limparBuffer();
 
 /* Funcao principal.
@@ -26,29 +26,29 @@ int main()
 void getNotas()
 {
 	std::cout << "Nota 1 > ";
-	float nota_1;
+	double nota_1;
 	std::cin >> nota_1;
 	limparBuffer();
 	std::cout << "\nPeso da Nota 1 > ";
-	float peso_n1;
+	double peso_n1;
 	std::cin >> peso_n1;
 	limparBuffer();
 
 	std::cout << "Nota 2 > ";
-	float nota_2;
+	double nota_2;
 	std::cin >> nota_2;
 	limparBuffer();
 	std::cout << "\nPeso da Nota 2 > ";
-	float peso_n2;
+	double peso_n2;
 	std::cin >> peso_n2;
 	limparBuffer();
 
 	std::cout << "Nota 3 > ";
-	float nota_3;
+	double nota_3;
 	std::cin >> nota_3;
 	limparBuffer();
 	std::cout << "\nPeso da Nota 3 > ";
-	float peso_n3;
+	double peso_n3;
 	std::cin >> peso_n3;
 	limparBuffer();
 
@@ -58,15 +58,15 @@ void getNotas()
 /* Calcula a media ponderada com os parametros recebidos e chama
  * a funcao printMedia().
 */
-void calcMedia(float n1, float n2, float n3, float p1, float p2, float p3)
+void calcMedia(double n1, double n2, double n3, double p1, double p2, double p3)
 {
-	float media = ((n1 * p1) + (n2 * p2) + (n3 * p3)) / 3;
+	double media = ((n1 * p1) + (n2 * p2) + (n3 * p3)) / 3;
 	printMedia(media);
 }
 
 /* Exibe a media ponderada na tela.
 */
-void printMedia(float media)
+void printMedia(double media)
 {
 	std::cout << "\nMedia Ponderada: " << media << "\n";
 }

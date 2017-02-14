@@ -9,8 +9,8 @@
 
 // Prototipo de funcoes.
 void getSalarioPercentual();
-void calcSalario(float salario, float percentual);
-void printSalario(float salario_final, float aumento);
+void calcSalario(double salario, double percentual);
+void printSalario(double salario_final, double aumento);
 void limpaBuffer();
 
 /* Funcao principal.
@@ -28,7 +28,7 @@ int main()
 void getSalarioPercentual()
 {
 	std::cout << "Insira seu salario > ";
-	float salario{};
+	double salario{};
 	std::cin >> salario;
 	limpaBuffer();
 
@@ -43,18 +43,18 @@ void getSalarioPercentual()
 /* Calcula o salario com o percentual recebido e envia 
  * o resultado para printSalario().
 */
-void calcSalario(float salario, float percentual)
+void calcSalario(double salario, double percentual)
 {
 	// Converte a porcentagem para decimal.
 	percentual /= 100;
-	float aumento = salario * percentual;
+	double aumento = salario * percentual;
 
 	printSalario(salario + aumento, aumento);
 }
 
 /* Exibe o valor de aumento e o salario final na tela.
 */
-void printSalario(float salario_final, float aumento)
+void printSalario(double salario_final, double aumento)
 {
 	std::cout << "\nValor do aumento: " << aumento;
 	std::cout << "\nSalario Final: " << salario_final;

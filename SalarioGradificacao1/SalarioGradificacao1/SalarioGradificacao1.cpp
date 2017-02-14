@@ -9,8 +9,8 @@
 
 // Prototipo das funcoes.
 void getSalario();
-void calcSalario(float salario);
-void printSalario(float salario_base, float salario_gratificacao, float salario);
+void calcSalario(double salario);
+void printSalario(double salario_base, double salario_gratificacao, double salario);
 
 /* Funcao principal.
 */
@@ -26,7 +26,7 @@ int main()
 void getSalario()
 {
 	std::cout << "Insira seu salario base > ";
-	float salario_base{};
+	double salario_base{};
 	std::cin >> salario_base;
 	std::cin.clear();
 	std::cin.ignore();
@@ -36,14 +36,14 @@ void getSalario()
 
 /* Calcula o salario com gratificacao e com imposto.
 */
-void calcSalario(float salario)
+void calcSalario(double salario)
 {
 	// Quarda o valor base.
-	float salario_base{ salario };
+	double salario_base{ salario };
 
 	// Soma o salario a gratificacao.
 	salario += (salario * 0.05);
-	float salario_gratificacao{ salario };
+	double salario_gratificacao{ salario };
 
 	// Subtrai o salario com o imposto resultante.
 	salario -= (salario * 0.07);
@@ -53,7 +53,7 @@ void calcSalario(float salario)
 
 /* Exibe o salario base, com gratificacao e com impostos na tela.
 */
-void printSalario(float salario_base, float salario_gratificacao, float salario)
+void printSalario(double salario_base, double salario_gratificacao, double salario)
 {
 	std::cout << "Salario base: " << salario_base;
 	std::cout << "\nSalario base com gratificacao: " << salario_gratificacao;
