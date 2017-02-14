@@ -7,8 +7,8 @@
 
 // Prototipo de funcoes.
 void getRaio();
-void calcArea(float raio);
-void printArea(float area);
+void calcArea(double raio);
+void printArea(double area);
 
 /* Funcao principal.
 */
@@ -25,7 +25,7 @@ int main()
 void getRaio()
 {
 	std::cout << "Insira o raio do circulo > ";
-	float raio;
+	double raio;
 	std::cin >> raio;
 
 	std::cin.clear();
@@ -36,15 +36,15 @@ void getRaio()
 
 /* Essa funcao calcula a area recebida como parametro.
 */
-void calcArea(float raio)
+void calcArea(double raio)
 {
-	float area = 3.14 * (raio * raio);
+	double area = 3.14 * (raio * raio);
 	printArea(area);
 }
 
 /* Essa funcao exibe a area do circulo na tela.
 */
-void printArea(float area)
+void printArea(double area)
 {
 	std::cout << "\nArea do circulo: " << area;
 }

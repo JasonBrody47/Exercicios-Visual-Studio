@@ -7,8 +7,8 @@
 
 // Prototipo de funcoes.
 void getMedidas();
-void calcArea(float base, float altura);
-void printArea(float area);
+void calcArea(double base, double altura);
+void printArea(double area);
 void limpaBuffer();
 
 /* Funcao principal.
@@ -26,12 +26,12 @@ int main()
 void getMedidas()
 {
 	std::cout << "Insira a base do triangulo > ";
-	float base;
+	double base;
 	std::cin >> base;
 	limpaBuffer();
 
 	std::cout << "\nInsira a altura do triangulo > ";
-	float altura;
+	double altura;
 	std::cin >> altura;
 	limpaBuffer();
 
@@ -40,15 +40,15 @@ void getMedidas()
 
 /* Essa funcao calcula a area pelos parametros base e altura recebidos.
 */
-void calcArea(float base, float altura)
+void calcArea(double base, double altura)
 {
-	float area = (base * altura) / 2;
+	double area = (base * altura) / 2;
 	printArea(area);
 }
 
 /* Essa funcao exibe o resultado da area na tela.
 */
-void printArea(float area)
+void printArea(double area)
 {
 	std::cout << "\nArea do triangulo: " << area;
 }
