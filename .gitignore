@@ -12,9 +12,6 @@
 *.log
 *.obj
 *.pch
-*.vcxproj
-*.filters
 *.idb
-*.sln
 *.txt
 *.opendb
