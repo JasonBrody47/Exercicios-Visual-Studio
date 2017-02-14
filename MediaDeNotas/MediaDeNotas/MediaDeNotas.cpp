@@ -7,8 +7,8 @@
 
 // Prototipo de funcoes.
 void obterNota();
-void calculeNota(float n1, float n2, float n3);
-void mostrarMedia(float media);
+void calculeNota(double n1, double n2, double n3);
+void mostrarMedia(double media);
 void limparBuffer();
 
 /* Função Principal.
@@ -27,17 +27,17 @@ int main()
 void obterNota()
 {
 	std::cout << "Insira a primeira nota > ";
-	float nota_1{};
+	double nota_1{};
 	std::cin >> nota_1;
 	limparBuffer();
 
 	std::cout << "\nInsira a segunda nota > ";
-	float nota_2{};
+	double nota_2{};
 	std::cin >> nota_2;
 	limparBuffer();
 
 	std::cout << "\nInsira a terceira nota > ";
-	float nota_3{};
+	double nota_3{};
 	std::cin >> nota_3;
 	limparBuffer();
 
@@ -48,14 +48,15 @@ void obterNota()
  * faz o calculo da media e chama outra funcao
  * com o resultado como argumento.
 */
-void calculeNota(float n1, float n2, float n3)
+void calculeNota(double n1, double n2, double n3)
 {
+	// O divisor e estatico pois o numero de notas tambem e.
 	mostrarMedia((n1 + n2 + n3) / 3);
 }
 
 /* Essa funcao exibe a media das notas na tela.
 */
-void mostrarMedia(float media)
+void mostrarMedia(double media)
 {
 	std::cout << "\nMedia das notas: " << media;
 }
