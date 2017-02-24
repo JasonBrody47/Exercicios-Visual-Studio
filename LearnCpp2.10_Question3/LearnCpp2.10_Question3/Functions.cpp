@@ -2,13 +2,6 @@
 #include <iostream>
 #include "Functions.h"
 
-/* Limpa erros e caracteres no buffer de entrada.
-*/
-void limparBuffer()
-{
-	std::cin.clear();
-	std::cin.ignore();
-}
 
 /* Obtem do usuario um valor Double e o retorna ao chamador.
 */
@@ -104,3 +97,10 @@ void printCalculatedResult(double print_number_1, char print_operator, double pr
 	std::cout << "\n" << "Operacao: " << print_number_1 << " " << print_operator << " " << print_number_2 << " = " << print_result << "\n";
 }
 
+/* Limpa erros e caracteres no buffer de entrada.
+*/
+void limparBuffer()
+{
+	std::cin.clear();
+	std::cin.ignore();
+}
