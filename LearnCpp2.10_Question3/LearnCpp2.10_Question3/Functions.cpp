@@ -68,6 +68,7 @@ bool checkOperator(char check_operator)
 */
 double calculateDoubleOperation(double calc_number_1, char calc_operator, double calc_number_2)
 {
+	// Armazane o resultado do calculo.
 	double calc_result{};
 
 	if (calc_operator == '+')
