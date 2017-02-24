@@ -1,6 +1,5 @@
 #include "stdafx.h"
 #include <iostream>
-#include "Functions.h"
 
 /* Limpa erros e caracteres no buffer de entrada.
 */
@@ -23,6 +22,19 @@ double getUserDoubleNumber()
 	limparBuffer();
 
 	return number;
+}
+
+/* Verifica se o operador inserido e valido.
+*/
+bool checkOperator(char check_operator)
+{
+	if ((check_operator == '+') || (check_operator == '-') || (check_operator == '*') || (check_operator == '/'))
+	{
+		return true;
+	}
+	// Qualquer caracter diferente de +, -, * e / e invalido.
+	std::cout << "\nOperador invalido!\n";
+	return false;
 }
 
 /* Obtem um operador matematico do usuario com um Char,
@@ -48,19 +60,6 @@ char getUserOperator()
 		// FALSE -> faz uma chamada recursiva ate que o operador seja valido.
 		getUserOperator();
 	}
-}
-
-/* Verifica se o operador inserido e valido.
-*/
-bool checkOperator(char check_operator)
-{
-	if ((check_operator == '+') || (check_operator == '-') || (check_operator == '*') || (check_operator == '/'))
-	{
-		return true;
-	}
-	// Qualquer caracter diferente de +, -, * e / e invalido.
-	std::cout << "\nOperador invalido!\n";
-	return false;
 }
 
 /* Faz o calculo dos Double's conforme o operador informado;
