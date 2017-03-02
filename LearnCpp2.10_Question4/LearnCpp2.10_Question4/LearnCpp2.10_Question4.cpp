@@ -6,6 +6,8 @@
 #include "Functions.h"
 #include <iostream>
 
+/* Funcao Principal: faz a ligacao entre as funcoes de Functions.h.
+*/
 int main()
 {
 	const double initial_height{ getTowerHeight() };
