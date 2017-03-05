@@ -29,7 +29,7 @@ void calculateBallHeight(double initial_height)
 	double ball_velocity{ 0.0 };
 	std::int16_t seconds{ 0 };
 
-	while (initial_height >= myConstants::ground)
+	while (initial_height > myConstants::ground)
 	{
 		/* Formula queda livre: d = g * (t ^ 2) / 2
 		d = distancia percorrida pelo corpo;
