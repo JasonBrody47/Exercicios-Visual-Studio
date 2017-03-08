@@ -15,3 +15,9 @@
 *.idb
 *.txt
 *.opendb
+/.vs/slnx.sqlite
+/.vs/ProjectSettings.json
+/.vs/VSWorkspaceState.json
+/.vs
+/.vs/ProjectSettings.json
+/.vs
