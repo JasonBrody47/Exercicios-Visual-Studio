@@ -12,15 +12,15 @@
 */
 int main()
 {
-	// As variaveis abaixo servem para encaminhamento e DEBUG de valores entre as funcoes.
-	double number_1{ getUserDoubleNumber() };
-	double number_2{ getUserDoubleNumber() };
-	char math_operator{ getUserOperator() };
-	double result{ calculateDoubleOperation(number_1, math_operator, number_2) };
-	printCalculatedResult(number_1, math_operator, number_2, result);
+    // As variaveis abaixo servem para encaminhamento e DEBUG de valores entre as funcoes.
+    double number_1{ getUserDoubleNumber() };
+    double number_2{ getUserDoubleNumber() };
+    char math_operator{ getUserOperator() };
+    double result{ calculateDoubleOperation(number_1, math_operator, number_2) };
+    printCalculatedResult(number_1, math_operator, number_2, result);
 
-	// Aguarda um Enter do usuario.
-	std::cin.get();
+    // Aguarda um Enter do usuario.
+    std::cin.get();
 
-	return 0;
+    return 0;
 }

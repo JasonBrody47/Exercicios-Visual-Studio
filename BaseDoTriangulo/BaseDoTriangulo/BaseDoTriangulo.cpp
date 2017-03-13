@@ -15,8 +15,8 @@ void limpaBuffer();
 */
 int main()
 {
-	getMedidas();
-	std::cin.get();
+    getMedidas();
+    std::cin.get();
     return 0;
 }
 
@@ -25,38 +25,38 @@ int main()
 */
 void getMedidas()
 {
-	std::cout << "Insira a base do triangulo > ";
-	double base;
-	std::cin >> base;
-	limpaBuffer();
+    std::cout << "Insira a base do triangulo > ";
+    double base;
+    std::cin >> base;
+    limpaBuffer();
 
-	std::cout << "\nInsira a altura do triangulo > ";
-	double altura;
-	std::cin >> altura;
-	limpaBuffer();
+    std::cout << "\nInsira a altura do triangulo > ";
+    double altura;
+    std::cin >> altura;
+    limpaBuffer();
 
-	calcArea(base, altura);
+    calcArea(base, altura);
 }
 
 /* Essa funcao calcula a area pelos parametros base e altura recebidos.
 */
 void calcArea(double base, double altura)
 {
-	double area = (base * altura) / 2;
-	printArea(area);
+    double area = (base * altura) / 2;
+    printArea(area);
 }
 
 /* Essa funcao exibe o resultado da area na tela.
 */
 void printArea(double area)
 {
-	std::cout << "\nArea do triangulo: " << area;
+    std::cout << "\nArea do triangulo: " << area;
 }
 
 /* Limpa erros e caracteres no buffer de entrada.
 */
 void limpaBuffer()
 {
-	std::cin.clear();
-	std::cin.ignore();
+    std::cin.clear();
+    std::cin.ignore();
 }

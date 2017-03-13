@@ -6,18 +6,18 @@
 */
 int readNumber()
 {
-	std::cout << "Insira um numero inteiro > ";
-	std::int32_t number{};
-	std::cin >> number;
-	std::cin.clear();
-	std::cin.ignore();
+    std::cout << "Insira um numero inteiro > ";
+    std::int32_t number{};
+    std::cin >> number;
+    std::cin.clear();
+    std::cin.ignore();
 
-	return number;
+    return number;
 }
 
 /* Exibe o reusltado da soma na tela.
 */
 void writeAnswer(std::int32_t result)
 {
-	std::cout << "A soma e: " << result << "\n";
+    std::cout << "A soma e: " << result << "\n";
 }

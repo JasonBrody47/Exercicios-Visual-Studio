@@ -16,8 +16,8 @@ void printSalario(double salario_base, double salario_gratificacao, double salar
 */
 int main()
 {
-	getSalario();
-	std::cin.get();
+    getSalario();
+    std::cin.get();
     return 0;
 }
 
@@ -25,37 +25,37 @@ int main()
 */
 void getSalario()
 {
-	std::cout << "Insira seu salario base > ";
-	double salario_base{};
-	std::cin >> salario_base;
-	std::cin.clear();
-	std::cin.ignore();
+    std::cout << "Insira seu salario base > ";
+    double salario_base{};
+    std::cin >> salario_base;
+    std::cin.clear();
+    std::cin.ignore();
 
-	calcSalario(salario_base);
+    calcSalario(salario_base);
 }
 
 /* Calcula o salario com gratificacao e com imposto.
 */
 void calcSalario(double salario)
 {
-	// Quarda o valor base.
-	double salario_base{ salario };
+    // Quarda o valor base.
+    double salario_base{ salario };
 
-	// Soma o salario a gratificacao.
-	salario += (salario * 0.05);
-	double salario_gratificacao{ salario };
+    // Soma o salario a gratificacao.
+    salario += (salario * 0.05);
+    double salario_gratificacao{ salario };
 
-	// Subtrai o salario com o imposto resultante.
-	salario -= (salario * 0.07);
+    // Subtrai o salario com o imposto resultante.
+    salario -= (salario * 0.07);
 
-	printSalario(salario_base, salario_gratificacao, salario);
+    printSalario(salario_base, salario_gratificacao, salario);
 }
 
 /* Exibe o salario base, com gratificacao e com impostos na tela.
 */
 void printSalario(double salario_base, double salario_gratificacao, double salario)
 {
-	std::cout << "Salario base: " << salario_base;
-	std::cout << "\nSalario base com gratificacao: " << salario_gratificacao;
-	std::cout << "\nSalario final com imposto: " << salario;
+    std::cout << "Salario base: " << salario_base;
+    std::cout << "\nSalario base com gratificacao: " << salario_gratificacao;
+    std::cout << "\nSalario final com imposto: " << salario;
 }

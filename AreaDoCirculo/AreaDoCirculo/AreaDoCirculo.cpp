@@ -1,50 +1,47 @@
-// Esse programa recebe o raio de um circulo, calcula e mostra sua area.
-// Criado por Luan Eduardo.
-// Perfil GitHub: https://github.com/LuanEduardo47
+/*
+ * Esse programa recebe o raio de um circulo, calcula e mostra sua area.
+ * @autor Luan Eduardo.
+ * Perfil GitHub: https://github.com/LuanEduardo47
+*/
 
 #include "stdafx.h"
 #include <iostream>
 
-// Prototipo de funcoes.
-void getRaio();
-void calcArea(double raio);
-void printArea(double area);
+void getCircleRadius();
+void calculateCircleArea(double radius);
+void printCircleArea(double print_area);
 
-/* Funcao principal.
-*/
+// Funcao Principal
 int main()
 {
-	getRaio();
-	std::cin.get();
+    getCircleRadius();
+    std::cin.get();
     return 0;
 }
 
-/* Essa funcao obtem o valor do raio do usuario e chama a funcao
- * para calcular esse raio.
-*/
-void getRaio()
+// Essa funcao obtem o valor do raio do usuario e chama a funcao
+// para calcular esse raio.
+void getCircleRadius()
 {
-	std::cout << "Insira o raio do circulo > ";
-	double raio;
-	std::cin >> raio;
+    std::cout << "Insira o raio do circulo > ";
+    double circle_radius;
+    std::cin >> circle_radius;
 
-	std::cin.clear();
-	std::cin.ignore();
+    std::cin.clear();
+    std::cin.ignore();
 
-	calcArea(raio);
+    calculateCircleArea(circle_radius);
 }
 
-/* Essa funcao calcula a area recebida como parametro.
-*/
-void calcArea(double raio)
+// Essa funcao calcula a area recebida como parametro.
+void calculateCircleArea(double radius)
 {
-	double area = 3.14 * (raio * raio);
-	printArea(area);
+    double circle_area = 3.14 * (radius * radius);
+    printCircleArea(circle_area);
 }
 
-/* Essa funcao exibe a area do circulo na tela.
-*/
-void printArea(double area)
+// Essa funcao exibe a area do circulo na tela.
+void printCircleArea(double print_area)
 {
-	std::cout << "\nArea do circulo: " << area;
+    std::cout << "\nArea do circulo: " << print_area;
 }

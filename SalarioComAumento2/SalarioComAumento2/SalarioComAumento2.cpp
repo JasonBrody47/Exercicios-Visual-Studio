@@ -17,8 +17,8 @@ void limpaBuffer();
 */
 int main()
 {
-	getSalarioPercentual();
-	std::cin.get();
+    getSalarioPercentual();
+    std::cin.get();
     return 0;
 }
 
@@ -27,43 +27,43 @@ int main()
 */
 void getSalarioPercentual()
 {
-	std::cout << "Insira seu salario > ";
-	double salario{};
-	std::cin >> salario;
-	limpaBuffer();
+    std::cout << "Insira seu salario > ";
+    double salario{};
+    std::cin >> salario;
+    limpaBuffer();
 
-	std::cout << "\nInsira o percentual de aumento > ";
-	std::int32_t percentual{};
-	std::cin >> percentual;
-	limpaBuffer();
+    std::cout << "\nInsira o percentual de aumento > ";
+    std::int32_t percentual{};
+    std::cin >> percentual;
+    limpaBuffer();
 
-	calcSalario(salario, percentual);
+    calcSalario(salario, percentual);
 }
 
-/* Calcula o salario com o percentual recebido e envia 
+/* Calcula o salario com o percentual recebido e envia
  * o resultado para printSalario().
 */
 void calcSalario(double salario, double percentual)
 {
-	// Converte a porcentagem para decimal.
-	percentual /= 100;
-	double aumento = salario * percentual;
+    // Converte a porcentagem para decimal.
+    percentual /= 100;
+    double aumento = salario * percentual;
 
-	printSalario(salario + aumento, aumento);
+    printSalario(salario + aumento, aumento);
 }
 
 /* Exibe o valor de aumento e o salario final na tela.
 */
 void printSalario(double salario_final, double aumento)
 {
-	std::cout << "\nValor do aumento: " << aumento;
-	std::cout << "\nSalario Final: " << salario_final;
+    std::cout << "\nValor do aumento: " << aumento;
+    std::cout << "\nSalario Final: " << salario_final;
 }
 
 /* Limpa erros e caracteres no buffer de entrada.
 */
 void limpaBuffer()
 {
-	std::cin.clear();
-	std::cin.ignore();
+    std::cin.clear();
+    std::cin.ignore();
 }

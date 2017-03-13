@@ -16,16 +16,16 @@ void writeAnswer(std::int32_t result);
 */
 int main()
 {
-	//int number_1 = readNumber();
-	//int number_2 = readNumber();
+    //int number_1 = readNumber();
+    //int number_2 = readNumber();
 
-	// Inicialização uniforme (C++11).
-	std::int32_t number_1{ readNumber() };
-	std::int32_t number_2{ readNumber() };
-	// int sum = number_1 + number_2;
-	writeAnswer(number_1 + number_2);
+    // Inicialização uniforme (C++11).
+    std::int32_t number_1{ readNumber() };
+    std::int32_t number_2{ readNumber() };
+    // int sum = number_1 + number_2;
+    writeAnswer(number_1 + number_2);
 
-	std::cin.get();
+    std::cin.get();
 
     return 0;
 }
@@ -34,18 +34,18 @@ int main()
 */
 int readNumber()
 {
-	std::cout << "Insira um numero inteiro > ";
-	std::int32_t number;
-	std::cin >> number;
-	std::cin.clear();
-	std::cin.ignore();
+    std::cout << "Insira um numero inteiro > ";
+    std::int32_t number;
+    std::cin >> number;
+    std::cin.clear();
+    std::cin.ignore();
 
-	return number;
+    return number;
 }
 
 /* Essa funcao exibe o resultado da soma na tela.
 */
 void writeAnswer(std::int32_t result)
 {
-	std::cout << "A soma e: " << result << "\n";
+    std::cout << "A soma e: " << result << "\n";
 }

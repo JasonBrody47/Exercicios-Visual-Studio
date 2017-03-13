@@ -15,8 +15,8 @@ void limparBuffer();
 */
 int main()
 {
-	obterNota();
-	std::cin.get();
+    obterNota();
+    std::cin.get();
     return 0;
 }
 
@@ -26,22 +26,22 @@ int main()
 */
 void obterNota()
 {
-	std::cout << "Insira a primeira nota > ";
-	double nota_1{};
-	std::cin >> nota_1;
-	limparBuffer();
+    std::cout << "Insira a primeira nota > ";
+    double nota_1{};
+    std::cin >> nota_1;
+    limparBuffer();
 
-	std::cout << "\nInsira a segunda nota > ";
-	double nota_2{};
-	std::cin >> nota_2;
-	limparBuffer();
+    std::cout << "\nInsira a segunda nota > ";
+    double nota_2{};
+    std::cin >> nota_2;
+    limparBuffer();
 
-	std::cout << "\nInsira a terceira nota > ";
-	double nota_3{};
-	std::cin >> nota_3;
-	limparBuffer();
+    std::cout << "\nInsira a terceira nota > ";
+    double nota_3{};
+    std::cin >> nota_3;
+    limparBuffer();
 
-	calculeNota(nota_1, nota_2, nota_3);
+    calculeNota(nota_1, nota_2, nota_3);
 }
 
 /* Essa funcao recebe os parametros passados,
@@ -50,21 +50,21 @@ void obterNota()
 */
 void calculeNota(double n1, double n2, double n3)
 {
-	// O divisor e estatico pois o numero de notas tambem e.
-	mostrarMedia((n1 + n2 + n3) / 3);
+    // O divisor e estatico pois o numero de notas tambem e.
+    mostrarMedia((n1 + n2 + n3) / 3);
 }
 
 /* Essa funcao exibe a media das notas na tela.
 */
 void mostrarMedia(double media)
 {
-	std::cout << "\nMedia das notas: " << media;
+    std::cout << "\nMedia das notas: " << media;
 }
 
 /* Limpa erros e caracteres do buffer de entrada.
 */
 void limparBuffer()
 {
-	std::cin.clear();
-	std::cin.ignore();
+    std::cin.clear();
+    std::cin.ignore();
 }

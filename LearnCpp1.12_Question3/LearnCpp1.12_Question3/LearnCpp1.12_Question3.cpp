@@ -15,17 +15,17 @@
 */
 int main()
 {
-	// int number_1 = readNumber();
-	// int number_2 = readNumber();
+    // int number_1 = readNumber();
+    // int number_2 = readNumber();
 
-	// Inicialicao uniforme (C++11).
-	std::int32_t number_1{ readNumber() };
-	std::int32_t number_2{ readNumber() };
+    // Inicialicao uniforme (C++11).
+    std::int32_t number_1{ readNumber() };
+    std::int32_t number_2{ readNumber() };
 
-	// int sum = number_1 + number_2;
-	writeAnswer(number_1 + number_2);
+    // int sum = number_1 + number_2;
+    writeAnswer(number_1 + number_2);
 
-	std::cin.get();
+    std::cin.get();
 
     return 0;
 }

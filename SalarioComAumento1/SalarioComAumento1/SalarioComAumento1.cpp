@@ -15,8 +15,8 @@ void printSalario(double salario_final);
 */
 int main()
 {
-	getSalario();
-	std::cin.get();
+    getSalario();
+    std::cin.get();
     return 0;
 }
 
@@ -25,30 +25,30 @@ int main()
 */
 void getSalario()
 {
-	std::cout << "Insira seu salario > ";
-	double salario{};
-	std::cin >> salario;
+    std::cout << "Insira seu salario > ";
+    double salario{};
+    std::cin >> salario;
 
-	std::cin.clear();
-	std::cin.ignore();
+    std::cin.clear();
+    std::cin.ignore();
 
-	calcSalario(salario);
+    calcSalario(salario);
 }
 
 /* Calcula o parametro salario recebido com seu aumento de 25%.
 */
 void calcSalario(double salario)
 {
-	// 0.25 => 25%
-	double aumento = salario * 0.25;
-	salario += aumento;
+    // 0.25 => 25%
+    double aumento = salario * 0.25;
+    salario += aumento;
 
-	printSalario(salario);
+    printSalario(salario);
 }
 
 /* Exibe o salario com aumento na tela.
 */
 void printSalario(double salario_final)
 {
-	std::cout << "\nSalario final (com aumento): " << salario_final;
+    std::cout << "\nSalario final (com aumento): " << salario_final;
 }

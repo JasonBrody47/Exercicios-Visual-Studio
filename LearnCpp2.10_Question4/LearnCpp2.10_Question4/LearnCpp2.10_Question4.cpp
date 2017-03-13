@@ -10,13 +10,11 @@
 */
 int main()
 {
-	const double initial_height{ getTowerHeight() };
-	calculateBallHeight(initial_height);
+    const double initial_height{ getTowerHeight() };
+    calculateBallHeight(initial_height);
 
-	// Aguarda um Enter do usuario.
-	std::cin.get();
+    // Aguarda um Enter do usuario.
+    std::cin.get();
 
     return 0;
 }
-
-
