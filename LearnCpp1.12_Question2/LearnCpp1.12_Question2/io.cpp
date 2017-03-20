@@ -1,23 +1,25 @@
-#include "stdafx.h"
-#include <iostream>
-#include <cstdint>
+// Copyright (C) 2017 Luan Eduardo.
+//
+// io.cpp faz parte do programa LearnCpp1.12_Question.cpp.
 
-/* Le a entrada do usuario e retorna o numero inteiro para o chamador.
-*/
-int readNumber()
+#include "stdafx.h"
+#include <cstdint>
+#include <iostream>
+
+int getNumber()
 {
     std::cout << "Insira um numero inteiro > ";
     std::int32_t number{};
     std::cin >> number;
+
+    // Limpa erros e caracteres do buffer de entrada.
     std::cin.clear();
     std::cin.ignore();
 
     return number;
 }
 
-/* Exibe o reusltado da soma na tela.
-*/
-void writeAnswer(std::int32_t result)
+void printSumOfNumbers(std::int32_t print_result)
 {
     std::cout << "A soma e: " << result << "\n";
 }
