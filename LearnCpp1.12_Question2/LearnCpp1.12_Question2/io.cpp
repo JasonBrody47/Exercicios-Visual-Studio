@@ -21,5 +21,5 @@ int getNumber()
 
 void printSumOfNumbers(std::int32_t print_result)
 {
-    std::cout << "A soma e: " << result << "\n";
+    std::cout << "A soma e: " << print_result << "\n";
 }
