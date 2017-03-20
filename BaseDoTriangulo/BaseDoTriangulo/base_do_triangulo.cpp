@@ -32,7 +32,7 @@ void calculateTriangleArea(const double calculate_base, const double calculate_h
     printTriangleArea(triangle_area);
 }
 
-void printTriangleArea(double triangle_area)
+void printTriangleArea(double print_triangle_area)
 {
-    std::cout << "\nArea do triangulo: " << triangle_area;
+    std::cout << "\nArea do triangulo: " << print_triangle_area;
 }

@@ -14,7 +14,7 @@ void clearImputBuffer();
 
 void calculateTriangleArea(const double calculate_base, const double calculate_height);
 
-void printTriangleArea(double triangle_area);
+void printTriangleArea(double print_triangle_area);
 
 
 #endif // !BASE_DO_TRIANGULO_H
