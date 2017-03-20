@@ -26,6 +26,8 @@ int getNumber()
     std::cout << "Insira um numero inteiro > ";
     std::int32_t number;
     std::cin >> number;
+
+    // Limpa erros e caracteres do buffer de entrada.
     std::cin.clear();
     std::cin.ignore();
 
