@@ -1,38 +1,27 @@
-// Este programa obtem 2 numeros inteiro do usuario,
-// soma e exibe o resultado dos 2.
-// Criado por Luan Eduardo.
-// Perfil GitHub: https://github.com/LuanEduardo47
+// Copyright (C) 2017 Luan Eduardo.
+//
+// Este arquivo faz parte do programa LearnCpp1.12_Question1.
 
 #include "stdafx.h"
-#include <iostream>
 #include <cstdint>
+#include <iostream>
 
-// Prototipo de funcoes
-int readNumber();
-void writeAnswer(std::int32_t result);
+int getNumber();
+void printSumOfNumbers(std::int32_t print_result);
 
-/* Funcao principal: Guarda o valor de 2 numeros por meio de readNumber(),
- * chama a funcao para imprimir o resultado na tela com a soma dos numeros.
-*/
 int main()
 {
-    //int number_1 = readNumber();
-    //int number_2 = readNumber();
+    std::int32_t number_1{ getNumber() };
+    std::int32_t number_2{ getNumber() };
 
-    // Inicialização uniforme (C++11).
-    std::int32_t number_1{ readNumber() };
-    std::int32_t number_2{ readNumber() };
-    // int sum = number_1 + number_2;
-    writeAnswer(number_1 + number_2);
+    printSumOfNumbers(number_1 + number_2);
 
     std::cin.get();
 
     return 0;
 }
 
-/* Essa funcao recebe um numero inteiro do usuario e retorna ao chamador.
-*/
-int readNumber()
+int getNumber()
 {
     std::cout << "Insira um numero inteiro > ";
     std::int32_t number;
@@ -43,9 +32,7 @@ int readNumber()
     return number;
 }
 
-/* Essa funcao exibe o resultado da soma na tela.
-*/
-void writeAnswer(std::int32_t result)
+void printSumOfNumbers(std::int32_t print_result)
 {
-    std::cout << "A soma e: " << result << "\n";
+    std::cout << "A soma e: " << print_result << "\n";
 }
