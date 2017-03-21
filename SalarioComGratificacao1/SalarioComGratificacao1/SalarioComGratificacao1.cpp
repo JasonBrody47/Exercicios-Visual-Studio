@@ -41,7 +41,8 @@ void calculateSalaryGratification(const double initial_salary)
     double salary_with_tax{ salary_with_gratification -
         (salary_with_gratification * constants::tax) };
 
-    printSalaryGratificationAndTax(initial_salary, salary_with_gratification, salary_with_tax);
+    printSalaryGratificationAndTax(initial_salary, salary_with_gratification,
+        salary_with_tax);
 }
 
 // TODO: reduzir o numero de argumentos.
