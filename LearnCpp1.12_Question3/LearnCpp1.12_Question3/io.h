@@ -1,15 +1,15 @@
+// Copyright (C) 2017 Luan Eduardo.
+//
+// Este arquivo é parte do programa LearnCpp1.12_Question3.
+
 #pragma once
 #ifndef INCLUDED_IO_H
 #define INCLUDED_IO_H
 
 #include <cstdint>
 
-/* Le a entrada do usuario e retorna o numero inteiro ao chamador.
-*/
-std::int32_t readNumber();
+std::int32_t getIntegerNumber();
 
-/* Exibe a soma dos numeros na tela.
-*/
-void writeAnswer(std::int32_t result);
+void printSumOfNumbers(std::int32_t print_result);
 
 #endif // !INCLUDED_IO_H

@@ -1,12 +1,12 @@
 // Copyright (C) 2017 Luan Eduardo.
 //
-// io.cpp faz parte do programa LearnCpp1.12_Question.cpp.
+// Este arquivo é parte do programa LearnCpp1.12_Question2.
 
 #include "stdafx.h"
 #include <cstdint>
 #include <iostream>
 
-int getNumber()
+int getIntegerNumber()
 {
     std::cout << "Insira um numero inteiro > ";
     std::int32_t number{};

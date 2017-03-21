@@ -1,12 +1,10 @@
 // Copyright (C) 2017 Luan Eduardo.
 //
-// base_do_triangulo.h faz parte do programa BaseDoTriangulo.
+// Este arquivo é parte do programa BaseDoTriangulo.
 
 #pragma once
 #ifndef BASE_DO_TRIANGULO_H
 #define BASE_DO_TRIANGULO_H
-
-#include <iostream>
 
 void getTriangleMeasures();
 

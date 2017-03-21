@@ -1,19 +1,16 @@
-// Este programa calcula a queda livre de uma bola numa altura determinada pelo usuario.
-// Criado por Luan Eduardo.
-// Perfil GitHub: https://github.com/LuanEduardo47
+// Copyright (C) 2017 Luan Eduardo.
+//
+// Este arquivo é parte do programa LearnCpp2.10_Question4.
 
 #include "stdafx.h"
-#include "Functions.h"
 #include <iostream>
+#include "Functions.h"
 
-/* Funcao Principal: faz a ligacao entre as funcoes de Functions.h.
-*/
 int main()
 {
-    const double initial_height{ getTowerHeight() };
+    const double initial_height{ getInitialTowerHeight() };
     calculateBallHeight(initial_height);
 
-    // Aguarda um Enter do usuario.
     std::cin.get();
 
     return 0;

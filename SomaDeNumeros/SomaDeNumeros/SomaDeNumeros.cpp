@@ -1,79 +1,69 @@
-// Este programa le, calcula e exibe a soma de 4 numeros.
-// Criado por Luan Eduardo.
-// Perfil GitHub: https://github.com/LuanEduardo47
+// Copyright (C) 2017 Luan Eduardo.
+//
+// Este arquivo é parte do programa SomaDeNumeros.
 
 #include "stdafx.h"
-#include <iostream>
 #include <cstdint>
-#include <string>
+#include <iostream>
 
-// Prototipos das funcoes.
-void lerNumeros();
-void somarNumeros(std::int32_t n1, std::int32_t n2, std::int32_t n3,
-    std::int32_t n4);
-void exibirSoma(std::int32_t soma);
-void limparBuffer();
+void getNumbers();
+void addNumbers(std::int32_t number_1, std::int32_t number_2,
+    std::int32_t number_3, std::int32_t number_4);
+void printSumOfNumbers(std::int32_t sum);
+void clearInputBuffer();
 
 /* Funcao principal.
 */
 int main()
 {
-    lerNumeros();
+    getNumbers();
+
     std::cin.get();
+
     return 0;
 }
 
-/* Essa funcao le as entradas do usuario,
- * armazena nas variaveis declaradas,
- * e usa as variaveis como argumentos para a chamada de outra funcao.
-*/
-void lerNumeros()
+void getNumbers()
 {
     std::cout << "Insira o primeiro numero > ";
-    std::int32_t num_1{};
-    std::cin >> num_1;
-    limparBuffer();
+    std::int32_t number_1{};
+    std::cin >> number_1;
+    clearInputBuffer();
 
     std::cout << "Insira o segundo numero > ";
-    std::int32_t num_2{};
-    std::cin >> num_2;
-    limparBuffer();
+    std::int32_t number_2{};
+    std::cin >> number_2;
+    clearInputBuffer();
 
     std::cout << "Insira o terceiro numero > ";
-    std::int32_t num_3{};
-    std::cin >> num_3;
-    limparBuffer();
+    std::int32_t number_3{};
+    std::cin >> number_3;
+    clearInputBuffer();
 
     std::cout << "Insira o quarto numero > ";
-    std::int32_t num_4{};
-    std::cin >> num_4;
-    limparBuffer();
+    std::int32_t number_4{};
+    std::cin >> number_4;
+    clearInputBuffer();
 
-    somarNumeros(num_1, num_2, num_3, num_4);
+    addNumbers(number_1, number_2, number_3, number_4);
 }
 
-/* Essa funcao recebe os valores de argumentos,
- * soma esses valores e envia o resultado como argumento
- * para outra chamada de funcao.
-*/
-void somarNumeros(std::int32_t n1, std::int32_t n2, std::int32_t n3,
-    std::int32_t n4)
+void clearInputBuffer()
 {
-    exibirSoma(n1 + n2 + n3 + n4);
+    std::cin.clear();
+    std::cin.ignore();
+}
+
+void addNumbers(std::int32_t number_1, std::int32_t number_2,
+    std::int32_t number_3, std::int32_t number_4)
+{
+    printSumOfNumbers(number_1 + number_2 + number_3 + number_4);
 }
 
 /* Essa funcao recebe a soma pelo argumento passado
  * e exibe o resultado na tela.
 */
-void exibirSoma(std::int32_t soma)
+void printSumOfNumbers(std::int32_t sum)
 {
-    std::cout << "Resultado da soma: " << soma;
-}
-
-/* Limpa erros e caracteres no buffer de entrada.
-*/
-void limparBuffer()
-{
-    std::cin.clear();
-    std::cin.ignore();
+    std::cout << "Resultado da soma: " << sum;
 }

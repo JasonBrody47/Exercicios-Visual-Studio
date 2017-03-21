@@ -1,32 +1,24 @@
+// Copyright (C) 2017 Luan Eduardo.
+//
+// Este arquivo é parte do programa LearnCpp2.10_Question3.
+
 #pragma once
 #ifndef FUNCTIONS_H
 #define FUNCTIONS_H
 
-/* Obtem do usuario um valor Double e o retorna ao chamador.
-*/
-double getUserDoubleNumber();
+double getDoubleNumber();
 
-/* Obtem um operador matematico do usuario com um Char,
-* O valor e retornado ao chamador.
-*/
-char getUserOperator();
+void clearInputBuffer();
 
-/* Verifica se o operador inserido e valido.
-*/
-bool checkOperator(char check_operator);
+char getValidOperator();
 
-/* Faz o calculo dos Double's conforme o operador informado;
-* O resultado e retornado ao chamador.
-*/
-double calculateDoubleOperation(double calc_number_1, char calc_operator, double calc_number_2);
+bool isValidOperator(char check_operator);
 
-/* Imprime o resultado do calculo na tela com os operandos e o operador.
-*/
-void printCalculatedResult(double print_number_1, char print_operator, double print_number_2, double print_result);
+double calculateDoubleOperation(const double calc_number_1,
+    const char calc_operator, const double calc_number_2);
 
-/* Limpa erros e caracteres no buffer de entrada.
-*/
-void limparBuffer();
+void printCalculatedResult(const double print_number_1, const char print_operator,
+    const double print_number_2, const double print_result);
 
 #endif // !FUNCTIONS_H
 

@@ -1,70 +1,55 @@
-// Este programa obtem 3 notas do usuario, calcula a media e exibe a media na tela.
-// Criado por Luan Eduardo.
-// Perfil GitHub: https://github.com/LuanEduardo47
+// Copyright (C) 2017 Luan Eduardo.
+//
+// Este arquivo é parte do programa MediaDeNotas.
 
 #include "stdafx.h"
 #include <iostream>
 
-// Prototipo de funcoes.
-void obterNota();
-void calculeNota(double n1, double n2, double n3);
-void mostrarMedia(double media);
-void limparBuffer();
+void getGrades();
+void calculateGradeAverage(double grade_1, double grade_2, double grade_3);
+void printGradeAverage(const double average);
+void clearInputBuffer();
 
-/* Função Principal.
-*/
 int main()
 {
-    obterNota();
+    getGrades();
     std::cin.get();
     return 0;
 }
 
-/* Essa funcao obtem tres notas do usuario,
- * armazena nas variaveis e usa os valores
- * como argumento para chamada de funcao.
-*/
-void obterNota()
+void getGrades()
 {
     std::cout << "Insira a primeira nota > ";
-    double nota_1{};
-    std::cin >> nota_1;
-    limparBuffer();
+    double grade_1{};
+    std::cin >> grade_1;
+    clearInputBuffer();
 
     std::cout << "\nInsira a segunda nota > ";
-    double nota_2{};
-    std::cin >> nota_2;
-    limparBuffer();
+    double grade_2{};
+    std::cin >> grade_2;
+    clearInputBuffer();
 
     std::cout << "\nInsira a terceira nota > ";
-    double nota_3{};
-    std::cin >> nota_3;
-    limparBuffer();
+    double grade_3{};
+    std::cin >> grade_3;
+    clearInputBuffer();
 
-    calculeNota(nota_1, nota_2, nota_3);
+    calculateGradeAverage(grade_1, grade_2, grade_3);
 }
 
-/* Essa funcao recebe os parametros passados,
- * faz o calculo da media e chama outra funcao
- * com o resultado como argumento.
-*/
-void calculeNota(double n1, double n2, double n3)
-{
-    // O divisor e estatico pois o numero de notas tambem e.
-    mostrarMedia((n1 + n2 + n3) / 3);
-}
-
-/* Essa funcao exibe a media das notas na tela.
-*/
-void mostrarMedia(double media)
-{
-    std::cout << "\nMedia das notas: " << media;
-}
-
-/* Limpa erros e caracteres do buffer de entrada.
-*/
-void limparBuffer()
+void clearInputBuffer()
 {
     std::cin.clear();
     std::cin.ignore();
 }
+
+void calculateGradeAverage(double grade_1, double grade_2, double grade_3)
+{
+    printGradeAverage((grade_1 + grade_2 + grade_3) / 3);
+}
+
+void printGradeAverage(double average)
+{
+    std::cout << "\nMedia das notas: " << average;
+}
+

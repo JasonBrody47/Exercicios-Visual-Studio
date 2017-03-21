@@ -1,54 +1,44 @@
-// Esse programa recebe o salario de um funcionario, calcula e mostra o novo salario,
-// com 25% de aumento.
-// Criado por Luan Eduardo.
-// Perfil GitHub: https://github.com/LuanEduardo47
+// Copyright (C) 2017 Luan Eduardo.
+//
+// Este arquivo é parte do programa SalarioComAumento1.
 
 #include "stdafx.h"
 #include <iostream>
 
-// Prototipo de funcoes.
-void getSalario();
-void calcSalario(double salario);
-void printSalario(double salario_final);
+void getSalary();
+void calculateSalaryIncrease(const double increased_salary);
+void printIncreasedSalary(const double final_salary);
 
-/* Funcao principal.
-*/
 int main()
 {
-    getSalario();
+    getSalary();
     std::cin.get();
     return 0;
 }
 
-/* Obtem a entrada do usuario e envia o numero inteiro como
- * argumento para calcSalario().
-*/
-void getSalario()
+void getSalary()
 {
     std::cout << "Insira seu salario > ";
-    double salario{};
-    std::cin >> salario;
+    double salary{};
+    std::cin >> salary;
 
+    // Limpa erros e caracteres no buffer de entrada.
     std::cin.clear();
     std::cin.ignore();
 
-    calcSalario(salario);
+    calculateSalaryIncrease(salary);
 }
 
-/* Calcula o parametro salario recebido com seu aumento de 25%.
-*/
-void calcSalario(double salario)
+void calculateSalaryIncrease(double increased_salary)
 {
     // 0.25 => 25%
-    double aumento = salario * 0.25;
-    salario += aumento;
+    double increase = increased_salary * 0.25;
+    increased_salary += increase;
 
-    printSalario(salario);
+    printIncreasedSalary(increased_salary);
 }
 
-/* Exibe o salario com aumento na tela.
-*/
-void printSalario(double salario_final)
+void printIncreasedSalary(const double final_salary)
 {
-    std::cout << "\nSalario final (com aumento): " << salario_final;
+    std::cout << "\nSalario final (com aumento): R$ " << final_salary;
 }

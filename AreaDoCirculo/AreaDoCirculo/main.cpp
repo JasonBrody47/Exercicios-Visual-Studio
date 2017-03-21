@@ -1,6 +1,6 @@
 // Copyright (C) 2017 Luan Eduardo.
 //
-// main.cpp faz parte do programa AreaDoCirculo.
+// Este arquivo é parte do programa AreaDocirculo.
 
 #include "stdafx.h"
 #include "area_do_circulo.h"

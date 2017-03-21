@@ -1,6 +1,6 @@
 // Copyright (C) 2017 Luan Eduardo.
 //
-// Este arquivo é parte do programa LearnCpp2.10_Question4.
+// Este arquivo é parte do programa SalarioComGratificacao2.
 
 #pragma once
 #ifndef CONSTANTS_H
@@ -8,9 +8,8 @@
 
 namespace constants
 {
-    const double earth_gravity{ 9.807 };
-    const double ground{ 0.0 };
+    const double gratification{ 0.05 };
+    const double tax{ 0.07 };
 }
 
 #endif // !CONSTANTS_H
-

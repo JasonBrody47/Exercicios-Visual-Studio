@@ -1,12 +1,10 @@
 // Copyright (C) 2017 Luan Eduardo.
 //
-// area_do_circulo.h faz parte do programa AreaDoCirculo.
+// Este arquivo é parte do programa AreaDocirculo.
 
 #pragma once
 #ifndef AREA_DO_CIRCULO_H
 #define AREA_DO_CIRCULO_H
-
-#include <iostream>
 
 void getCircleRadius();
 

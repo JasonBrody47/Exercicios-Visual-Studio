@@ -1,80 +1,77 @@
-// Este programa recebe 3 notas e seus pesos, calcula e mostra a media ponderada.
-// Criado por Luan Eduardo.
-// Perfil GitHub: https://github.com/LuanEduardo47
+// Copyright (C) 2017 Luan Eduardo.
+//
+// Este arquivo é parte do programa MediaPonderada.
 
 #include "stdafx.h"
 #include <iostream>
 
-// Prototipo das funcoes.
-void getNotas();
-void calcMedia(double n1, double n2, double n3, double p1, double p2, double p3);
-void printMedia(double media);
-void limparBuffer();
+void getWeightedGrades();
+void calculateWeightedAverage(double grade_1, double grade_2, double grade_3,
+    double weight_of_grade_1, double weight_of_grade_2, double weight_of_grade_3);
+void printWeightedAverage(const double print_average);
+void clearInputBuffer();
 
-/* Funcao principal.
-*/
 int main()
 {
-    getNotas();
+    getWeightedGrades();
     std::cin.get();
     return 0;
 }
 
-/* Obtem as notas e seus pesos do usuario e envia os valores
- * como argumentos para a chamada de calcMedia().
-*/
-void getNotas()
+// TODO: refatorar a funcao em partes menores.
+void getWeightedGrades()
 {
     std::cout << "Nota 1 > ";
-    double nota_1;
-    std::cin >> nota_1;
-    limparBuffer();
+    double grade_1;
+    std::cin >> grade_1;
+    clearInputBuffer();
+
     std::cout << "\nPeso da Nota 1 > ";
-    double peso_n1;
-    std::cin >> peso_n1;
-    limparBuffer();
+    double weight_of_grade_1;
+    std::cin >> weight_of_grade_1;
+    clearInputBuffer();
 
     std::cout << "Nota 2 > ";
-    double nota_2;
-    std::cin >> nota_2;
-    limparBuffer();
+    double grade_2;
+    std::cin >> grade_2;
+    clearInputBuffer();
+
     std::cout << "\nPeso da Nota 2 > ";
-    double peso_n2;
-    std::cin >> peso_n2;
-    limparBuffer();
+    double weight_of_grade_2;
+    std::cin >> weight_of_grade_2;
+    clearInputBuffer();
 
     std::cout << "Nota 3 > ";
-    double nota_3;
-    std::cin >> nota_3;
-    limparBuffer();
+    double grade_3;
+    std::cin >> grade_3;
+    clearInputBuffer();
+
     std::cout << "\nPeso da Nota 3 > ";
-    double peso_n3;
-    std::cin >> peso_n3;
-    limparBuffer();
+    double weight_of_grade_3;
+    std::cin >> weight_of_grade_3;
+    clearInputBuffer();
 
-    calcMedia(nota_1, nota_2, nota_3, peso_n1, peso_n2, peso_n3);
+    calculateWeightedAverage(grade_1, grade_2, grade_3, weight_of_grade_1,
+        weight_of_grade_2, weight_of_grade_3);
 }
 
-/* Calcula a media ponderada com os parametros recebidos e chama
- * a funcao printMedia().
-*/
-void calcMedia(double n1, double n2, double n3, double p1, double p2, double p3)
-{
-    double media = ((n1 * p1) + (n2 * p2) + (n3 * p3)) / 3;
-    printMedia(media);
-}
-
-/* Exibe a media ponderada na tela.
-*/
-void printMedia(double media)
-{
-    std::cout << "\nMedia Ponderada: " << media << "\n";
-}
-
-/* Limpa erros e caracteres no buffer de entrada.
-*/
-void limparBuffer()
+void clearInputBuffer()
 {
     std::cin.clear();
     std::cin.ignore();
+}
+
+// TODO: usar uma estrutura de dados para diminuir os parametros.
+void calculateWeightedAverage(double grade_1, double grade_2, double grade_3,
+    double weight_of_grade_1, double weight_of_grade_2, double weight_of_grade_3)
+{
+    double average = ((grade_1 * weight_of_grade_1) + (grade_2 * weight_of_grade_2) +
+        (grade_3 * weight_of_grade_3)) / 3;
+
+    printWeightedAverage(average);
+}
+
+void printWeightedAverage(const double print_average)
+{
+    std::cout << "\nMedia Ponderada: " << print_average << "\n";
 }

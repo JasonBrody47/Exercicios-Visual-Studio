@@ -1,9 +1,10 @@
 // Copyright (C) 2017 Luan Eduardo.
 //
-// main.cpp faz parte do programa AreaDoTriangulo.
+// Este arquivo é parte do programa BaseDoTriangulo.
 
 #include "stdafx.h"
 #include "base_do_triangulo.h"
+#include <iostream>
 
 int main()
 {

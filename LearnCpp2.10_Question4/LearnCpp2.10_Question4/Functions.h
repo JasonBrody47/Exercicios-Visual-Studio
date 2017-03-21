@@ -1,16 +1,15 @@
+// Copyright (C) 2017 Luan Eduardo.
+//
+// Este arquivo é parte do programa LearnCpp2.10_Question4.
+
 #pragma once
 #ifndef FUNCTIONS_H
 #define FUNCTIONS_H
 
-#include <cstdint>
+double getInitialTowerHeight();
 
-// Obtem a altura da torre em metros do usuario.
-double getTowerHeight();
+void calculateBallHeight(double current_height);
 
-// Calcula a altura da bola a cada segundo passado.
-void calculateBallHeight(double initial_height);
-
-// Imprime os segundos e altura em que a bola se encontra.
-void printBallHeight(double print_height, std::int16_t print_seconds);
+void printBallHeightAndSeconds(double print_height, size_t print_seconds);
 
 #endif // !FUNCTIONS_H
