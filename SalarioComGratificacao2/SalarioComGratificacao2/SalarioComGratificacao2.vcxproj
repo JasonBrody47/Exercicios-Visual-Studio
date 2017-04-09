@@ -22,7 +22,7 @@
     <ProjectGuid>{8A4834CE-C051-49E9-9AD2-F86AF8CD8646}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>SalarioGratificacao2</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
     <ProjectName>SalarioComGratificacao2</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
