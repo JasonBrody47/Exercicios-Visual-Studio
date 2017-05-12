@@ -9,30 +9,30 @@ int main()
 {
     enum class Monsters
     {
-        MONSTERS_ORCS,
-        MONSTERS_GLOBINS,
-        MONSTERS_TROLLS,
-        MONSTERS_OGRES,
-        MONSTERS_SKELETONS
+        ORCS,
+        GLOBINS,
+        TROLLS,
+        OGRES,
+        SKELETONS
     };
 
-    Monsters monster{ Monsters::MONSTERS_TROLLS };
+    Monsters monster{ Monsters::TROLLS };
 
     switch (monster)
     {
-    case Monsters::MONSTERS_ORCS:
+    case Monsters::ORCS:
         std::cout << "Orcs";
         break;
-    case Monsters::MONSTERS_GLOBINS:
+    case Monsters::GLOBINS:
         std::cout << "Globins";
         break;
-    case Monsters::MONSTERS_TROLLS:
+    case Monsters::TROLLS:
         std::cout << "Trolls";
         break;
-    case Monsters::MONSTERS_OGRES:
+    case Monsters::OGRES:
         std::cout << "Ogres";
         break;
-    case Monsters::MONSTERS_SKELETONS:
+    case Monsters::SKELETONS:
         std::cout << "Skeletons";
         break;
     default:
