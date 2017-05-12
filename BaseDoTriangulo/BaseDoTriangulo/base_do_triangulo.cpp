@@ -27,13 +27,13 @@ void clearImputBuffer()
     std::cin.ignore();
 }
 
-void calculateTriangleArea(const double calculate_base, const double calculate_height)
+void calculateTriangleArea(measure_t base, measure_t height)
 {
-    double triangle_area = (calculate_base * calculate_height) / 2;
+    double triangle_area = (base * height) / 2;
     printTriangleArea(triangle_area);
 }
 
-void printTriangleArea(double print_triangle_area)
+void printTriangleArea(measure_t print_area)
 {
-    std::cout << "\nArea do triangulo: " << print_triangle_area;
+    std::cout << "\nArea do triangulo: " << print_area;
 }
