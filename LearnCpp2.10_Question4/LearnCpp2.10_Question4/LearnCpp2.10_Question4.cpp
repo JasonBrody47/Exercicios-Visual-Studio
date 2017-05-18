@@ -8,7 +8,7 @@
 
 int main()
 {
-    const double initial_height{ getInitialTowerHeight() };
+    height_t initial_height{ getInitialTowerHeight() };
     calculateBallHeight(initial_height);
 
     std::cin.get();

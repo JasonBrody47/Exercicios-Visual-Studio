@@ -6,15 +6,18 @@
 #include <string>
 #include <cstdint>
 
-std::string getUserName();
-std::int16_t getUserAge();
-double calculateAgeForEachLetter(std::string name, std::int16_t age);
+using name_t = std::string;
+using age_t = std::int16_t;
+
+name_t getUserName();
+age_t getUserAge();
+double calculateAgeForEachLetter(name_t name, age_t age);
 void printCalculatedAge(double final_age);
 
 int main()
 {
-    std::string user_name{ getUserName() };
-    std::int16_t user_age{ getUserAge() };
+    name_t user_name{ getUserName() };
+    age_t user_age{ getUserAge() };
     printCalculatedAge(calculateAgeForEachLetter(user_name, user_age));
 
     std::cin.get();
@@ -22,19 +25,19 @@ int main()
     return 0;
 }
 
-std::string getUserName()
+name_t getUserName()
 {
     std::cout << "Insira seu nome completo > ";
-    std::string name;
+    name_t name;
     std::getline(std::cin, name);
 
     return name;
 }
 
-std::int16_t getUserAge()
+age_t getUserAge()
 {
     std::cout << "Insira sua idade > ";
-    std::int16_t age;
+    age_t age;
     std::cin >> age;
 
     // Limpa erros e caracteres no buffer de entrada.
@@ -44,7 +47,7 @@ std::int16_t getUserAge()
     return age;
 }
 
-double calculateAgeForEachLetter(std::string name, std::int16_t age)
+double calculateAgeForEachLetter(name_t name, age_t age)
 {
     return (static_cast<double>(age) / name.length());
 }

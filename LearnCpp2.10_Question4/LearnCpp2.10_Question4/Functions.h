@@ -6,10 +6,13 @@
 #ifndef FUNCTIONS_H
 #define FUNCTIONS_H
 
+using height_t = double;
+
+
 double getInitialTowerHeight();
 
-void calculateBallHeight(double current_height);
+void calculateBallHeight(height_t current_height);
 
-void printBallHeightAndSeconds(double print_height, size_t print_seconds);
+void printBallHeightAndSeconds(height_t print_height, size_t print_seconds);
 
 #endif // !FUNCTIONS_H

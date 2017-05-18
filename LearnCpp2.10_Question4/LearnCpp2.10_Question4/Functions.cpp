@@ -7,10 +7,10 @@
 #include "Functions.h"
 #include "constants.h"
 
-double getInitialTowerHeight()
+height_t getInitialTowerHeight()
 {
     std::cout << "Insira a altura inicial da torre em metros > ";
-    double tower_height{};
+    height_t tower_height{};
     std::cin >> tower_height;
 
     // Limpa erros e caracteres no buffer de entrada.
@@ -20,7 +20,7 @@ double getInitialTowerHeight()
     return tower_height;
 }
 
-void calculateBallHeight(double current_height)
+void calculateBallHeight(height_t current_height)
 {
     double ball_velocity{ 0.0 };
     for (size_t seconds = 0; current_height > constants::ground; seconds++)
@@ -32,7 +32,7 @@ void calculateBallHeight(double current_height)
 
 }
 
-void printBallHeightAndSeconds(double print_height, size_t print_seconds)
+void printBallHeightAndSeconds(height_t print_height, size_t print_seconds)
 {
     if (print_height > constants::ground)
     {

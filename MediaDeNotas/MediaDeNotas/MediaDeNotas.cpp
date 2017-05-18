@@ -5,8 +5,10 @@
 #include "stdafx.h"
 #include <iostream>
 
+using grades_t = double;
+
 void getGrades();
-void calculateGradeAverage(double grade_1, double grade_2, double grade_3);
+void calculateGradeAverage(grades_t grade_1, grades_t grade_2, grades_t grade_3);
 void printGradeAverage(const double average);
 void clearInputBuffer();
 
@@ -20,17 +22,17 @@ int main()
 void getGrades()
 {
     std::cout << "Insira a primeira nota > ";
-    double grade_1{};
+    grades_t grade_1{};
     std::cin >> grade_1;
     clearInputBuffer();
 
     std::cout << "\nInsira a segunda nota > ";
-    double grade_2{};
+    grades_t grade_2{};
     std::cin >> grade_2;
     clearInputBuffer();
 
     std::cout << "\nInsira a terceira nota > ";
-    double grade_3{};
+    grades_t grade_3{};
     std::cin >> grade_3;
     clearInputBuffer();
 
@@ -43,12 +45,12 @@ void clearInputBuffer()
     std::cin.ignore();
 }
 
-void calculateGradeAverage(double grade_1, double grade_2, double grade_3)
+void calculateGradeAverage(grades_t grade_1, grades_t grade_2, grades_t grade_3)
 {
     printGradeAverage((grade_1 + grade_2 + grade_3) / 3);
 }
 
-void printGradeAverage(double average)
+void printGradeAverage(const double average)
 {
     std::cout << "\nMedia das notas: " << average;
 }
