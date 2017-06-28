@@ -19,11 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{3CB7359B-2CE5-4A0B-82D4-2E6260958E69}</ProjectGuid>
+    <ProjectGuid>{EBFDD942-853E-4125-AFEA-859EE88FC6C9}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>BaseDoTriangulo</RootNamespace>
+    <RootNamespace>LearnCpp112_Question3</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
-    <ProjectName>base-do-triangulo</ProjectName>
+    <ProjectName>soma-de-inteiros</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -143,13 +143,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="base-do-triangulo.h" />
+    <ClInclude Include="io.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="io.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="base-do-triangulo.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

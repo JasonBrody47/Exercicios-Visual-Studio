@@ -6,18 +6,16 @@
 #ifndef BASE_DO_TRIANGULO_H
 #define BASE_DO_TRIANGULO_H
 
-// Tipo definido para const double
+// Tipo definido para const double.
 using measure_t = const double;
 
+// Funções.
 
-void getTriangleMeasures();
-
-void clearImputBuffer();
-
-void calculateTriangleArea(measure_t base, measure_t height);
-
-void printTriangleArea(measure_t print_area);
-
+double getBase();
+double getHeight();
+measure_t calculateTriangleArea(measure_t base, measure_t height);
+void printTriangleArea(measure_t area);
+bool validateImput();
 
 #endif // !BASE_DO_TRIANGULO_H
 
