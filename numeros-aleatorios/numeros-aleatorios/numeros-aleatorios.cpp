@@ -1,9 +1,10 @@
-// Métodos para gerar númeoros pseudo-aleatórios em C++.
+// Métodos para gerar números pseudo-aleatórios em C++.
 
 #include "stdafx.h"
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
+#include <random>
 
 uint32_t userSeed();
 void printRandomNumbers(uint32_t seed);
@@ -15,7 +16,7 @@ int main()
     uint32_t seed{ userSeed() };
     printRandomNumbers(seed);
     printRandomNumbers(seedByTime());
-
+    
     testTimeFunction();
 
     std::cin.get();
@@ -48,7 +49,7 @@ void printRandomNumbers(uint32_t seed)
 uint32_t seedByTime()
 {
     std::cout << "\nNumeros aleatorios a partir do relogio do sistema:\n\n";
-    return static_cast<unsigned int>(time(0));
+    return static_cast<unsigned int>(std::time(nullptr));
 }
 
 void testTimeFunction()
