@@ -3,12 +3,13 @@
 // Este arquivo é parte do programa AreaDocirculo.
 
 #include "stdafx.h"
-#include "area_do_circulo.h"
+#include "area-do-circulo.h"
 #include <iostream>
 
 int main()
 {
-    getCircleRadius();
+    printCircleArea(calculateCircleArea(getCircleRadius()));
+
     std::cin.get();
     return 0;
 }
