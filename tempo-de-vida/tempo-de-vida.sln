@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.4
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LearnCpp4.4b_Question1", "LearnCpp4.4b_Question1\LearnCpp4.4b_Question1.vcxproj", "{2B779757-42B9-4D10-8B00-959F5FC8C655}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tempo-de-vida", "tempo-de-vida\tempo-de-vida.vcxproj", "{2B779757-42B9-4D10-8B00-959F5FC8C655}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
