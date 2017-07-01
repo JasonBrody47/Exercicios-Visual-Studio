@@ -1,10 +1,8 @@
-// Copyright (C) 2017 Luan Eduardo.
-//
-// Este arquivo é parte do programa SalarioComAumento2.
+// Salario com aumento.
 
 #include "stdafx.h"
 #include <iostream>
-#include "salario_com_aumento2.h"
+#include "salario-com-aumento.h"
 
 int main()
 {

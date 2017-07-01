@@ -1,17 +1,14 @@
-// Copyright (C) 2017 Luan Eduardo.
-//
-// Este arquivo é parte do programa SalarioComAumento2.
+// Salario com aumento.
 
 #include "stdafx.h"
 #include <iostream>
-#include "salario_com_aumento2.h"
+#include "salario-com-aumento.h"
 
 double getSalary()
 {
     std::cout << "Insira seu salario > ";
     double salary{};
     std::cin >> salary;
-    clearInputBuffer();
 
     return salary;
 }
@@ -21,15 +18,8 @@ double getPercentageIncrease()
     std::cout << "\nInsira o percentual de aumento > ";
     double percentage{};
     std::cin >> percentage;
-    clearInputBuffer();
 
     return percentage;
-}
-
-void clearInputBuffer()
-{
-    std::cin.clear();
-    std::cin.ignore();
 }
 
 double calculateSalaryIncrease(double salary, double percentage)
