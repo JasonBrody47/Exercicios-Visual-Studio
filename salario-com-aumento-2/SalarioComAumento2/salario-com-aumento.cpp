@@ -6,31 +6,47 @@
 
 double getSalary()
 {
-    std::cout << "Insira seu salario > ";
-    double salary{};
+    std::cout << "Insira seu salario > R$ ";
+    double salary;
     std::cin >> salary;
 
-    return salary;
+    if (isValidInput())
+        return salary;
+    else
+        getSalary();
 }
 
 double getPercentageIncrease()
 {
-    std::cout << "\nInsira o percentual de aumento > ";
-    double percentage{};
+    std::cout << "Insira o percentual de aumento > %";
+    double percentage;
     std::cin >> percentage;
 
-    return percentage;
+    if (isValidInput())
+        return percentage;
+    else
+        getPercentageIncrease();
+}
+
+bool isValidInput()
+{
+    if (std::cin.fail())
+    {
+        std::cin.clear();
+        std::cin.ignore(32767, '\n');
+        std::cout << "isValidInput(): valor invalido.\n";
+        return false;
+    }
+    else
+    {
+        std::cin.ignore(323767, '\n');
+        return true;
+    }
 }
 
 double calculateSalaryIncrease(double salary, double percentage)
 {
-    // Converte a porcentagem para decimal.
-    percentage /= 100;
-
-    double increase{ salary * percentage };
-    salary += increase;
-
-    return salary;
+    return salary + (salary * (percentage / 100));
 }
 
 void printIncreasedSalary(double final_salary)

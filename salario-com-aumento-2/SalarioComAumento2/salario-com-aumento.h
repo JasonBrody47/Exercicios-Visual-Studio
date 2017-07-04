@@ -6,6 +6,7 @@
 
 double getSalary();
 double getPercentageIncrease();
+bool isValidInput();
 double calculateSalaryIncrease(double salary, double percentage);
 void printIncreasedSalary(double final_salary);
 

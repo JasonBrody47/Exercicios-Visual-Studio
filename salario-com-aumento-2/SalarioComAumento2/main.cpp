@@ -9,9 +9,8 @@ int main()
     double salary{ getSalary() };
     double percentage{ getPercentageIncrease() };
 
-    double increased_salary{ calculateSalaryIncrease(salary, percentage) };
-
-    printIncreasedSalary(increased_salary);
+    double final_salary{ calculateSalaryIncrease(salary, percentage) };
+    printIncreasedSalary(final_salary);
 
     std::cin.get();
     return 0;
