@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SalarioComAumento2", "SalarioComAumento2\SalarioComAumento2.vcxproj", "{71471486-3BDE-4187-AD5E-E244FF4E5D3D}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "salario-com-aumento", "salario-com-aumento\salario-com-aumento.vcxproj", "{71471486-3BDE-4187-AD5E-E244FF4E5D3D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
