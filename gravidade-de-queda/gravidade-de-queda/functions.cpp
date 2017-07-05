@@ -13,7 +13,7 @@ height_t getInitialHeight()
         height_t height;
         std::cin >> height;
 
-        if (std::cin.fail())
+        if (std::cin.fail() || height <= 0)
         {
             std::cin.clear();
             std::cin.ignore(32767, '\n');
