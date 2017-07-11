@@ -87,7 +87,7 @@ int16_t getUserInput()
 
 bool isValidInput(int16_t input)
 {
-    if (std::cin.fail() || input <= 0 || input > 100)
+    if (std::cin.fail() || input < min || input > max)
     {
         std::cin.clear();
         std::cin.ignore(32767, '\n');
