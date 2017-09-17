@@ -7,18 +7,17 @@
 
 int main()
 {
-    // Imprimir todos os elementos da matriz.
 
     int matriz[]{ 4, 6, 7, 3, 8, 2, 1, 9, 5 };
     int matriz_lenght = sizeof(matriz) / sizeof(matriz[0]);
 
+    // Imprimir todos os elementos da matriz.
     for (int i = 0; i < matriz_lenght; ++i)
     {
         std::cout << matriz[i] << " ";
     }
 
     // Imprime o indice do elemento igual ao input do usuario.
-
     int indice;
     while (true)
     {
@@ -46,7 +45,6 @@ int main()
     }
 
     // Imprime o indice que armazena o maior valor.
-
     int max_index{ 0 };
     for (int i = 0; i < matriz_lenght; ++i)
     {
