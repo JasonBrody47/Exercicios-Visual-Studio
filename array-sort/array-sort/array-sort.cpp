@@ -78,7 +78,6 @@ void bubbleSort()
                 hasSwap = true;
             }
         }
-        ++iteration;
 
         if (hasSwap == true)
             printArray(bubble, length);
