@@ -50,7 +50,8 @@ std::string* sortNames(std::string *names, int32_t length)
     for (int32_t startIndex = 0; startIndex < length - 1; ++startIndex)
     {
         int32_t smallIndex{ startIndex };
-        for (int32_t currentIndex = startIndex + 1; currentIndex < length; ++currentIndex)
+        for (int32_t currentIndex = startIndex + 1; currentIndex < length;
+            ++currentIndex)
         {
             if (names[currentIndex] < names[smallIndex])
                 std::swap(names[currentIndex], names[smallIndex]);
