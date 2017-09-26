@@ -4,7 +4,7 @@
 
 int main()
 {
-    int32_t length{ getNumberOfNames() };
+    int16_t length{ getNumberOfNames() };
     std::string *names{ getNames(length) };
 
     if (length > 1)
