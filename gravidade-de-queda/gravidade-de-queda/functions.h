@@ -10,6 +10,7 @@ using height_t = double;
 // Funções
 
 double getInitialHeight();
+bool isValidInput(height_t input);
 void calculateHeightFall(height_t height);
 void printHeightAndSeconds(height_t height, size_t seconds);
 

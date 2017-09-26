@@ -7,24 +7,29 @@
 
 height_t getInitialHeight()
 {
+    height_t height;
     while (true)
     {
         std::cout << "Insira a altura inicial da torre em metros > ";
-        height_t height;
         std::cin >> height;
 
-        if (std::cin.fail() || height <= 0)
-        {
-            std::cin.clear();
-            std::cin.ignore(32767, '\n');
-            std::cout << "getInitialHeight(): valor invalida.\n";
-        }
-        else
-        {
-            std::cin.ignore(32767, '\n');
-            return height;
-        }
+        if (isValidInput(height))
+            break;
     }
+    return height;
+}
+
+bool isValidInput(height_t input)
+{
+    if (std::cin.fail() || input <= 0)
+    {
+        std::cin.clear();
+        std::cin.ignore(32767, '\n');
+        std::cout << "isValidInput(): valor invalida.\n";
+        return false;
+    }
+    std::cin.ignore(32767, '\n');
+    return true;
 }
 
 void calculateHeightFall(height_t height)
