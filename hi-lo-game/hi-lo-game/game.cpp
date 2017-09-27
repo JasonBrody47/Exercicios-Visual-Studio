@@ -7,70 +7,37 @@
 
 void playGame()
 {
-    Var value;
-    value.random = getRandomNumber(min, max);
+    Game game;
+    game.random = getRandomNumber(random_limit::min, random_limit::max);
 
-    printHUD(HUD::TITLE);
+    std::cout << "\nJogo do High-Low!\nVoce tem 7 chances para " <<
+        "adivinhar qual e o numero entre 1 e 100. Vamos jogar!\n\n";
     do
     {
-        printHUD(HUD::GUESS, value);
-        value.guess = getUserInput();
-        if (checkGuess(value))
-            break;
-    } while (++value.chances <= 7);
+        std::cout << "Tentativa #" << game.chances << " > ";
+        game.guess = getUserInput();
 
-    if (value.chances > 7)
-        printHUD(HUD::LOSE, value);
+        if (checkGuess(game))
+            break;
+    } while (++game.chances <= 7);
+
+    if (game.chances > 7)
+        std::cout << "\nVoce perdeu ;( | O numero correto e: " <<
+        game.random << "\n";
+    else
+        std::cout << "\nVoce ganhou! Parabens! O numero correto e: " <<
+        game.random << "\n";
 
     if (playAgain())
         playGame();
 }
 
-int16_t getRandomNumber(int32_t min, int32_t max)
+int16_t getRandomNumber(int16_t min, int16_t max)
 {
     // Descarta o primeiro valor de rand().
     std::rand();
 
     return rand() % (max - min + 1) + min;
-}
-
-void printHUD(HUD hud, Var value)
-{
-    switch (hud)
-    {
-    case HUD::TITLE:
-        std::cout << "\nJogo do High-Low!\nVoce tem 7 chances para " <<
-            "adivinhar qual e o numero entre 1 e 100. Vamos jogar!\n\n";
-        break;
-    case HUD::GUESS:
-        std::cout << "Tentativa #" << value.chances << " > ";
-        break;
-    case HUD::HIGH:
-        std::cout << "Seu palpite e muito alto.\n";
-        break;
-    case HUD::LOW:
-        std::cout << "Seu palpite e muito baixo.\n";
-        break;
-    case HUD::WIN:
-        std::cout << "\nVoce ganhou! Parabens!\n";
-        break;
-    case HUD::LOSE:
-        std::cout << "\nVoce perdeu ;( | O numero correto e: " <<
-            value.random << "\n";
-        break;
-    case HUD::PLAY_AGAIN:
-        std::cout << "\nVoce quer jogar novamente? (y, n) > ";
-        break;
-    case HUD::THANKS:
-        std::cout << "\nObrigado por jogar!";
-        break;
-    case HUD::INPUT_ERROR:
-        std::cout << "Valor invalido!\n";
-        break;
-    default:
-        std::cout << "printHUD(): enum invalido.\n";
-        break;
-    }
 }
 
 int16_t getUserInput()
@@ -87,42 +54,39 @@ int16_t getUserInput()
 
 bool isValidInput(int16_t input)
 {
-    if (std::cin.fail() || input < min || input > max)
+    if (std::cin.fail() || input < random_limit::min || input > random_limit::max)
     {
         std::cin.clear();
         std::cin.ignore(32767, '\n');
-        printHUD(HUD::INPUT_ERROR);
+        std::cout << "isValidInput(): Valor invalido!\n";
         return false;
     }
-    else
-    {
-        std::cin.ignore(32767, '\n');
-        return true;
-    }
+    std::cin.ignore(32767, '\n');
+    return true;
 }
 
-bool checkGuess(Var check)
+bool checkGuess(const Game check)
 {
     if (check.guess < check.random)
     {
-        printHUD(HUD::LOW);
+        std::cout << "Seu palpite e muito baixo.\n";
         return false;
     }
     else if (check.guess > check.random)
     {
-        printHUD(HUD::HIGH);
+        std::cout << "Seu palpite e muito alto.\n";
         return false;
     }
     else if (check.guess == check.random)
     {
-        printHUD(HUD::WIN);
+        std::cout << "Valor correto!\n";
         return true;
     }
 }
 
 bool playAgain()
 {
-    printHUD(HUD::PLAY_AGAIN);
+    std::cout << "\nVoce quer jogar novamente? (y, n) > ";
     static char choise;
     std::cin >> choise;
     std::cin.ignore(32767, '\n');
@@ -134,10 +98,10 @@ bool playAgain()
         return true;
     case 'n':
     case 'N':
-        printHUD(HUD::THANKS);
+        std::cout << "\nObrigado por jogar!";
         return false;
     default:
-        printHUD(HUD::INPUT_ERROR);
+        std::cout << "playAgain(): Valor invalido!\n";
         playAgain();
     }
 }

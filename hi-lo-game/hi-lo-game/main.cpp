@@ -6,6 +6,7 @@
 #include <cstdlib>
 #include "game.h"
 
+// TODO: Usar a biblioteca rlutil para personalizar o console.
 int main()
 {
     // Cria uma seed inicial com base no tempo do sistema.
