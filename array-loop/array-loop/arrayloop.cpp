@@ -12,7 +12,7 @@ int main()
     int matriz_lenght = sizeof(matriz) / sizeof(matriz[0]);
 
     // Imprimir todos os elementos da matriz.
-    for (const auto element : matriz)
+    for (const auto &element : matriz)
         std::cout << element << " ";
 
     // Imprime o indice do elemento igual ao input do usuario.
@@ -44,7 +44,7 @@ int main()
 
     // Imprime o indice que armazena o maior valor.
     int max_index{ 0 };
-    for (const auto index : matriz)
+    for (const auto &index : matriz)
     {
         if (index > max_index)
             max_index = index;
