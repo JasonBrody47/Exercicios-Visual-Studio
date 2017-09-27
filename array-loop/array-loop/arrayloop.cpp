@@ -12,10 +12,8 @@ int main()
     int matriz_lenght = sizeof(matriz) / sizeof(matriz[0]);
 
     // Imprimir todos os elementos da matriz.
-    for (int i = 0; i < matriz_lenght; ++i)
-    {
-        std::cout << matriz[i] << " ";
-    }
+    for (const auto element : matriz)
+        std::cout << element << " ";
 
     // Imprime o indice do elemento igual ao input do usuario.
     int indice;
@@ -46,12 +44,12 @@ int main()
 
     // Imprime o indice que armazena o maior valor.
     int max_index{ 0 };
-    for (int i = 0; i < matriz_lenght; ++i)
+    for (const auto index : matriz)
     {
-        if (matriz[i] > matriz[max_index])
-            max_index = i;
+        if (index > max_index)
+            max_index = index;
     }
-    std::cout << "O indice com o valor e " << max_index << "\n";
+    std::cout << "O indice com o maior valor e " << max_index << "\n";
 
     std::cin.get();
     return 0;
