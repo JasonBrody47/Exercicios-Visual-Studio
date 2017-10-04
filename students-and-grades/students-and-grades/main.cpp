@@ -3,7 +3,6 @@
 #include <iostream>
 #include <string>
 #include "studentsandgrades.h"
-#include "rlutil.h"
 
 // TODO: Obter o input do usuario para cada nome e nota. 
 // TODO: Ordene o array pela nota (mais alta primeiro).

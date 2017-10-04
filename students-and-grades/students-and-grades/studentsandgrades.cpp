@@ -5,7 +5,6 @@
 #include <string>
 #include <utility>
 #include "studentsandgrades.h"
-#include "rlutil.h"
 
 int16_t getNumberOfStudents()
 {
