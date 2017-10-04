@@ -25,7 +25,7 @@ bool isValidStudentName(const std::string &name);
 int16_t getStudentGrade();
 bool isValidStudentGrade(const int16_t &grade);
 
-Student * sortArrayByGrade(Student * students, const int16_t number_of_students);
-void printStudentsArray(Student * students, const int16_t number_of_students);
+Student* sortArrayByGrade(Student *students, const int16_t number_of_students);
+void printStudentsArray(Student *students, const int16_t number_of_students);
 
 #endif // !STUDENTS_AND_GRADES
