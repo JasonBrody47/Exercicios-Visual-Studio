@@ -22,7 +22,7 @@
     <ProjectGuid>{2E58E7D1-6B9A-4C35-8966-73FC7D8ED7B4}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>MediaDeNotas</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
     <ProjectName>media-de-notas</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />

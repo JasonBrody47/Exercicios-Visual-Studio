@@ -22,7 +22,7 @@
     <ProjectGuid>{EBFDD942-853E-4125-AFEA-859EE88FC6C9}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>LearnCpp112_Question3</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
     <ProjectName>soma-de-inteiros</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />

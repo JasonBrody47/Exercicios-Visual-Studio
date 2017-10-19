@@ -22,7 +22,7 @@
     <ProjectGuid>{94648D7B-B7C1-46BE-86AF-F7DD4DC6C51D}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>LearnCpp210_Question4</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
     <ProjectName>gravidade-de-queda</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />

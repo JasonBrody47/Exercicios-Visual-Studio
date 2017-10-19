@@ -23,7 +23,7 @@
     <ProjectGuid>{81C3DA4A-CB64-4D86-8CCF-2B05E36ED405}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>arrayloop</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

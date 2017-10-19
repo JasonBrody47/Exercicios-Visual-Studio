@@ -23,7 +23,7 @@
     <ProjectGuid>{4574B473-1EF1-4FB6-9546-093F54E83B90}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>stdvectortest</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

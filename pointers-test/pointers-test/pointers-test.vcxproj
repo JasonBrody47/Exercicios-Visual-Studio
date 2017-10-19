@@ -23,7 +23,7 @@
     <ProjectGuid>{429B3AEC-B016-47B0-AA73-BFB7A0B7877E}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>pointerstest</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

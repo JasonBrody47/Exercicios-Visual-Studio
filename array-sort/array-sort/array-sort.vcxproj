@@ -23,7 +23,7 @@
     <ProjectGuid>{AA63C7ED-A584-4A09-BEBB-D38B2608B511}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>arrayselectionsort</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
     <ProjectName>array-sort</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />

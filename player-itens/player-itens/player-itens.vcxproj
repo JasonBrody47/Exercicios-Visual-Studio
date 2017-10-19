@@ -23,7 +23,7 @@
     <ProjectGuid>{C504D4A0-4498-47A2-9DD6-4072BAC5C922}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>playeritens</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

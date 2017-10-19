@@ -23,7 +23,7 @@
     <ProjectGuid>{04475984-6F33-4CEA-9BBC-F7B312A5511B}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>stdarraytest</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

@@ -23,7 +23,7 @@
     <ProjectGuid>{481D7404-0099-441F-8C0C-096C94CD5FD8}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>cstylestringprint</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

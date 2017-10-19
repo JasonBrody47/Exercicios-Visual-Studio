@@ -23,7 +23,7 @@
     <ProjectGuid>{C0B02ED1-E066-4B81-ABD5-5CA6E0A584FE}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>foreachloop</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

@@ -23,7 +23,7 @@
     <ProjectGuid>{FE100E7A-12EA-43F0-93EA-9C2DA2F402E7}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>arrayfixotest</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
