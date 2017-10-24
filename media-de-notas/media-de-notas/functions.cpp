@@ -39,7 +39,7 @@ bool isValidInput()
     {
         std::cin.clear();
         std::cin.ignore(32767, '\n');
-        std::cout << "isValidInput(): valor invalido.\n";
+        std::cerr << "isValidInput(): valor invalido.\n";
         return false;
     }
     else

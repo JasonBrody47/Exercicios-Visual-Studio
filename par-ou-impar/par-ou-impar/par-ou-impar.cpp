@@ -27,7 +27,7 @@ int32_t getNumber()
         {
             std::cin.clear();
             std::cin.ignore(32767, '\n');
-            std::cout << "getNumber(): valor invalido!\n";
+            std::cerr << "getNumber(): valor invalido!\n";
         }
         else
         {

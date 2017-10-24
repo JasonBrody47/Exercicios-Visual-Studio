@@ -22,7 +22,7 @@ inline bool isValidInteger()
 {
     if (std::cin.fail())
     {
-        std::cout << "isValidInteger(): Inteiro Invalido!\n";
+        std::cerr << "isValidInteger(): Inteiro Invalido!\n";
         std::cin.clear();
         std::cin.ignore(32767, '\n');
         return false;
@@ -56,7 +56,7 @@ inline bool isValidOperator(char user_operator)
     case '/':
         return true;
     default:
-        std::cout << "isValidOperator(): Operador invalido!\n";
+        std::cerr << "isValidOperator(): Operador invalido!\n";
         return false;
     }
 }

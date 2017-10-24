@@ -19,7 +19,7 @@ double getCircleRadius()
         {
             std::cin.clear();
             std::cin.ignore(32767, '\n');
-            std::cout << "Entrada invalida: tente novamente.\n";
+            std::cerr << "Entrada invalida: tente novamente.\n";
         }
         else
         {

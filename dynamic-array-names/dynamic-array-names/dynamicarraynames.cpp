@@ -24,7 +24,7 @@ bool isValidInput(int16_t input)
 {
     if (std::cin.fail() || input < names_limit::min || input > names_limit::max)
     {
-        std::cout << "isValidInput(): invalid input.\n";
+        std::cerr << "isValidInput(): invalid input.\n";
         std::cin.clear();
         std::cin.ignore(32767, '\n');
         return false;

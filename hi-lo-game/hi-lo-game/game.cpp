@@ -58,7 +58,7 @@ bool isValidInput(int16_t input)
     {
         std::cin.clear();
         std::cin.ignore(32767, '\n');
-        std::cout << "isValidInput(): Valor invalido!\n";
+        std::cerr << "isValidInput(): Valor invalido!\n";
         return false;
     }
     std::cin.ignore(32767, '\n');
@@ -101,7 +101,7 @@ bool playAgain()
         std::cout << "\nObrigado por jogar!";
         return false;
     default:
-        std::cout << "playAgain(): Valor invalido!\n";
+        std::cerr << "playAgain(): Valor invalido!\n";
         playAgain();
     }
 }

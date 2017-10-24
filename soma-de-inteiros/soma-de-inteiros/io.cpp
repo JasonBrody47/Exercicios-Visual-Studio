@@ -15,7 +15,7 @@ std::int64_t getIntegerNumber()
         {
             std::cin.clear();
             std::cin.ignore(32767, '\n');
-            std::cout << "getIntegerNumber(): numero invalido!\n";
+            std::cerr << "getIntegerNumber(): numero invalido!\n";
         }
         else
         {

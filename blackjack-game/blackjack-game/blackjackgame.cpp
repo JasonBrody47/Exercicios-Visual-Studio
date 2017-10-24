@@ -184,7 +184,7 @@ bool checkPlayerInput(char choice)
 {
     if (choice != 'Y' && choice != 'y' && choice != 'N' && choice != 'n')
     {
-        std::cout << "Entrada invalida!\n";
+        std::cerr << "Entrada invalida!\n";
         return false;
     }
     else
@@ -215,6 +215,6 @@ bool playAgain()
         else if (choice == 'N' || choice == 'n')
             return false;
         else
-            std::cout << "Entrada invalida!\n";
+            std::cerr << "Entrada invalida!\n";
     }
 }

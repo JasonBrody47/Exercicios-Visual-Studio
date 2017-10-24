@@ -73,7 +73,7 @@ void printNumberOfLegs(Animal name)
         break;
     // Captura de erro.
     default:
-        std::cout << "printNumberOfLegs(): Invalid Enum item.\n";
+        std::cerr << "printNumberOfLegs(): Invalid Enum item.\n";
         break;
     }
 }

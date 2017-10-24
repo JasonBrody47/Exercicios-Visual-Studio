@@ -46,7 +46,7 @@ bool validateImput()
     {
         std::cin.clear();
         std::cin.ignore(32767, '\n');
-        std::cout << "validadeImput(): Entrada invalida, tente novamente.\n";
+        std::cerr << "validadeImput(): Entrada invalida, tente novamente.\n";
         return true;
     }
     else

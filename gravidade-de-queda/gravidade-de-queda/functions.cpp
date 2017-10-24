@@ -25,7 +25,7 @@ bool isValidInput(height_t input)
     {
         std::cin.clear();
         std::cin.ignore(32767, '\n');
-        std::cout << "isValidInput(): valor invalida.\n";
+        std::cerr << "isValidInput(): valor invalida.\n";
         return false;
     }
     std::cin.ignore(32767, '\n');

@@ -16,7 +16,7 @@ double getDoubleNumber()
         {
             std::cin.clear();
             std::cin.ignore(32767, '\n');
-            std::cout << "getDoubleNumber(): valor invalido!\n";
+            std::cerr << "getDoubleNumber(): valor invalido!\n";
         }
         else
         {
@@ -47,7 +47,7 @@ bool isValidOperator(operator_t check_op)
         return true;
     }
     std::cin.ignore(32767, '\n');
-    std::cout << "isValidOperator(): operador invalido!\n";
+    std::cerr << "isValidOperator(): operador invalido!\n";
     return false;
 }
 
@@ -64,7 +64,7 @@ double calculateOperation(cdouble_t num_1, coperator_t calc_op, cdouble_t num_2)
     case '/':
         return num_1 / num_2;
     default:
-        std::cout << "calculateOperation(): invalid operator!\n";
+        std::cerr << "calculateOperation(): invalid operator!\n";
         break;
     }
 }

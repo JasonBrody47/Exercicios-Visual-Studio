@@ -23,7 +23,7 @@ bool isValidInput(int32_t input)
     {
         std::cin.clear();
         std::cin.ignore(32767, '\n');
-        std::cout << "getNumberLimit(): valor invalido!\n";
+        std::cerr << "getNumberLimit(): valor invalido!\n";
         return false;
     }
     else
