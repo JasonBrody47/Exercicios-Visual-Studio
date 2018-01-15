@@ -5,5 +5,3 @@
 In the source codes comment the `#include "stdafx"` line.
 
 * Visual Studio project files are included.
-
-**Copyright (C) 2017 Luan Eduardo.** Here is my [GitHub Profile] (https://github.com/LuanEduardo47).
