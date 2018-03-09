@@ -35,3 +35,4 @@
 /numeros-aleatorios/numeros-aleatorios/numeros-aleatorios.vcxproj.user
 *.iobj
 *.ipdb
+*.o
