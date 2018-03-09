@@ -1,6 +1,5 @@
 // Cógido de exemplo, ainda não sei aplicar nada disto.
 
-#include "stdafx.h"
 #include <iostream>
 #include <random> // Para std::random_device e std::mt19937
 // #include <ctime> // Descomente se usando Code::Blocks

@@ -1,6 +1,5 @@
 // LearnCpp3.2_Question2.
 
-#include "stdafx.h"
 #include <iostream>
 #include <cstdint>
 

@@ -1,4 +1,3 @@
-#include "stdafx.h"
 #include "base-do-triangulo.h"
 #include <iostream>
 

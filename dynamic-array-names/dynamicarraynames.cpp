@@ -1,4 +1,3 @@
-#include "stdafx.h"
 #include <cstdint>
 #include <iostream>
 #include <string>

@@ -1,5 +1,3 @@
-
-#include "stdafx.h"
 #include "basic-calculator.h"
 #include <iostream>
 

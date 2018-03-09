@@ -1,6 +1,5 @@
 // Monster Info.
 
-#include "stdafx.h"
 #include <iostream>
 #include "monster.h"
 

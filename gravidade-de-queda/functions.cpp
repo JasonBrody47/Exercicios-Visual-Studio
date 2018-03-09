@@ -1,6 +1,5 @@
 // LearnCpp2.10_Question4.
 
-#include "stdafx.h"
 #include <iostream>
 #include "functions.h"
 #include "physics.h"

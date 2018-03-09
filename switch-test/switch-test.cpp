@@ -1,4 +1,3 @@
-#include "stdafx.h"
 #include <iostream>
 
 int calculate(int x, int y, char op);

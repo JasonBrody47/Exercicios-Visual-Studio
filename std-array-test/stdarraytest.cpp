@@ -1,6 +1,5 @@
 // std::array test
 
-#include "stdafx.h"
 #include <iostream>
 #include <array>
 #include <algorithm>

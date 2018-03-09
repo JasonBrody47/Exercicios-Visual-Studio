@@ -1,6 +1,5 @@
 // LearnCpp: 55 while statements, exercício 2.
 
-#include "stdafx.h"
 #include <iostream>
 #include <cstdint>
 

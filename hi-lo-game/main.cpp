@@ -1,6 +1,5 @@
 // Jogo High-Low.
 
-#include "stdafx.h"
 #include <iostream>
 #include <ctime>
 #include <cstdlib>

@@ -1,5 +1,3 @@
-
-#include "stdafx.h"
 #include <iostream>
 #include "blackjackgame.h"
 #include <array>

@@ -1,6 +1,5 @@
 // Teste de métodos simples de ordenação de arrays.
 
-#include "stdafx.h"
 #include <iostream>
 #include <cstdint>
 #include <utility>

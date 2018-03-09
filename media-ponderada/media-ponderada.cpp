@@ -1,6 +1,5 @@
 // Média Ponderada.
 
-#include "stdafx.h"
 #include <iostream>
 #include "media-ponderada.h"
 

@@ -1,4 +1,3 @@
-#include "stdafx.h"
 #include "area-do-circulo.h"
 #include <iostream>
 

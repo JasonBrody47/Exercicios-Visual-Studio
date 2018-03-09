@@ -1,6 +1,5 @@
 // Sálario com aumento.
 
-#include "stdafx.h"
 #include <iostream>
 #include "salario-com-aumento.h"
 

@@ -1,5 +1,3 @@
-
-#include "stdafx.h"
 #include <iostream>
 
 void printCString(char *c_style_string);

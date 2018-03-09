@@ -1,6 +1,5 @@
 // Teste com matriz (array) de tamanho fixo.
 
-#include "stdafx.h"
 #include <iostream>
 
 namespace animals {

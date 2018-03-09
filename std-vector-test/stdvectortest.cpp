@@ -1,6 +1,5 @@
 // std::vector test
 
-#include "stdafx.h"
 #include <iostream>
 #include <vector>
 

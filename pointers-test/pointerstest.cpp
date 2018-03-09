@@ -1,6 +1,5 @@
 // Testes básicos com ponteiros.
 
-#include "stdafx.h"
 #include <iostream>
 #include <typeinfo>
 

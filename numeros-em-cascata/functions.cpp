@@ -1,6 +1,5 @@
 // Sequência de números em cascata.
 
-#include "stdafx.h"
 #include <iostream>
 #include <cstdint>
 #include "functions.h"

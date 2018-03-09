@@ -1,6 +1,5 @@
 // Métodos para gerar números pseudo-aleatórios em C++.
 
-#include "stdafx.h"
 #include <iostream>
 #include <cstdlib>
 #include <ctime>

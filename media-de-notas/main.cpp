@@ -1,6 +1,5 @@
 // Média de Notas.
 
-#include "stdafx.h"
 #include <iostream>
 #include "functions.h"
 

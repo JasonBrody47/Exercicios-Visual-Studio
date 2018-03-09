@@ -1,6 +1,5 @@
 // LearnCpp2.10_Question3.
 
-#include "stdafx.h"
 #include <iostream>
 #include "Functions.h"
 
