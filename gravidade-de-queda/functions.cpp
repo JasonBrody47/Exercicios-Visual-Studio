@@ -38,7 +38,7 @@ void calculateHeightFall(height_t height)
     double velocity{ 0.0 };
     for (size_t seconds = 0; height > ground; ++seconds)
     {
-        // Fórmula: v = g * t� / 2
+        // Fórmula: v = g * t² / 2
         velocity = earth_gravity * (seconds * seconds) / 2;
         height -= velocity;
         printHeightAndSeconds(height, seconds);
