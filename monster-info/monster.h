@@ -21,7 +21,7 @@ struct Monster
     int32_t health;
 };
 
-// Fun��es.
+// Funções.
 
 string getNameType(Monster type);
 void printMonster(Monster monster);

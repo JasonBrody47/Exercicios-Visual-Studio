@@ -6,9 +6,9 @@
 
 int main()
 {
-    // Use uma fonte de entropia de hardware se dispon�vel, caso contr�rio use PRNG.
+    // Use uma fonte de entropia de hardware se disponível, caso contrário use PRNG.
     std::random_device rd;
-    // Inicializa o Mercenne Twister com uma seed aleat�ria.
+    // Inicializa o Mercenne Twister com uma seed aleatória.
     std::mt19937 mersenne(rd());
 
     // Imprime vários námeros aleatários.
