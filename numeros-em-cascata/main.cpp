@@ -1,7 +1,6 @@
 // Sequência de números em cascata.
 
 #include <iostream>
-#include <cstdint>
 #include "functions.h"
 
 
