@@ -1,4 +1,4 @@
-// Testes basicos com ponteiros.
+// Testes básicos com ponteiros.
 
 #include "stdafx.h"
 #include <iostream>

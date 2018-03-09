@@ -1,4 +1,4 @@
-// Métodos para gerar números pseudo-aleatórios em C++.
+// MÃ©todos para gerar nÃºmeros pseudo-aleatÃ³rios em C++.
 
 #include "stdafx.h"
 #include <iostream>

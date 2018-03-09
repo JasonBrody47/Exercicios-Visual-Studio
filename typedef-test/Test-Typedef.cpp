@@ -1,17 +1,14 @@
-// Test-Typedef.cpp : Define o ponto de entrada para a aplica��o de console.
-//
-
 #include "stdafx.h"
 #include <cstdint>
 #include <iostream>
 
-// Definicao de tipo padrao.
+// Definição de tipo padrão.
 typedef int error_t;
 
-// Definicao de tipo C++11 (preferir este metodo).
+// Definição de tipo C++11 (preferir este método).
 using error_t2 = int;
 
-// Funcao que usa typedef error_t2
+// Função que usa typedef error_t2
 error_t2 printData();
 
 int main()

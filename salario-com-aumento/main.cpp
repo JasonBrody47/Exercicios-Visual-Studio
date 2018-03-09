@@ -1,4 +1,4 @@
-// Salario com aumento.
+// Sálario com aumento.
 
 #include "stdafx.h"
 #include <iostream>

@@ -1,4 +1,4 @@
-// Media Ponderada.
+// MÃ©dia Ponderada.
 
 #pragma once
 #ifndef MEDIAPONDERADA_H
@@ -23,7 +23,7 @@ struct Weight
 // Typedef para Const Double.
 using average_t = const double;
 
-// Funções.
+// FunÃ§Ãµes.
 
 Grades getGrades();
 Weight getWeight();

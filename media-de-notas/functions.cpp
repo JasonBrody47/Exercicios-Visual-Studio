@@ -1,4 +1,4 @@
-// Media de Notas.
+// Média de Notas.
 
 #include "stdafx.h"
 #include <iostream>
@@ -8,7 +8,7 @@ Student getGrades()
 {
     Student average;
 
-    // Foi usado um loop em cada input pois n�o achei outra forma no momento.
+    // Foi usado um loop em cada input pois não achei outra forma no momento.
     while (true)
     {
         std::cout << "Insira a primeira nota > ";

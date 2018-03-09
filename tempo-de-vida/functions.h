@@ -9,7 +9,7 @@
 using name_t = std::string;
 using age_t = std::int16_t;
 
-// Funções.
+// FunÃ§Ãµes.
 
 name_t getUserName();
 age_t getUserAge();

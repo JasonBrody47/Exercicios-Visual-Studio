@@ -1,4 +1,4 @@
-// Salario com Gratificacao 1.
+// Sálario com Gratificacao 1.
 
 #include "stdafx.h"
 #include <iostream>

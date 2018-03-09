@@ -1,4 +1,4 @@
-// Media de Notas.
+// Média de Notas.
 
 #include "stdafx.h"
 #include <iostream>

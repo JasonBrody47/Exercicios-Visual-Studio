@@ -1,4 +1,4 @@
-// Salario com Gratificacao 1.
+// Sálario com Gratificacao 1.
 
 #pragma once
 #ifndef SALARIO_GRATIFICACAO_H

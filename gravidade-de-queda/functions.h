@@ -7,7 +7,7 @@
 // Typedef para Double.
 using height_t = double;
 
-// Funções
+// FunÃ§Ãµes
 
 double getInitialHeight();
 bool isValidInput(height_t input);

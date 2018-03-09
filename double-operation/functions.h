@@ -10,7 +10,7 @@ using cdouble_t = const double;
 using coperator_t = const char;
 using operator_t = char;
 
-// Funções.
+// FunÃ§Ãµes.
 
 double getDoubleNumber();
 operator_t getOperator();
@@ -19,4 +19,3 @@ double calculateOperation(cdouble_t num_1, coperator_t calc_op, cdouble_t num_2)
 void printResult(cdouble_t num_1, coperator_t op, cdouble_t num_2, cdouble_t result);
 
 #endif // !FUNCTIONS_H
-

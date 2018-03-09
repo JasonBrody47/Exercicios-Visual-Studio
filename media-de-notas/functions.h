@@ -1,4 +1,4 @@
-// Media de Notas.
+// MÃ©dia de Notas.
 
 #pragma once
 #ifndef FUNCTIONS_H
@@ -12,7 +12,7 @@ struct Student
     grades_t grade_1, grade_2, grade_3;
 };
 
-// Protótipos das funções.
+// ProtÃ³tipos das funÃ§Ãµes.
 
 Student getGrades();
 bool isValidInput();

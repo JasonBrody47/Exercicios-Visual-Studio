@@ -1,4 +1,4 @@
-// LearnCpp: 55 while statements, exercício 2.
+// LearnCpp: 55 while statements, exercÃ­cio 2.
 
 #include "stdafx.h"
 #include <iostream>

@@ -1,5 +1,3 @@
-// LearnCpp: 5.7 — For statements, exercício 1.
-
 #include "stdafx.h"
 #include <iostream>
 #include <cstdint>

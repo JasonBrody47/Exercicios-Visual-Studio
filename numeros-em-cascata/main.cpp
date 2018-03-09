@@ -1,4 +1,4 @@
-// Sequência de números em cascata.
+// SequÃªncia de nÃºmeros em cascata.
 
 #include "stdafx.h"
 #include <iostream>

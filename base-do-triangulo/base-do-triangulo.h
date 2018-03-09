@@ -1,7 +1,3 @@
-// Copyright (C) 2017 Luan Eduardo.
-//
-// Este arquivo é parte do programa BaseDoTriangulo.
-
 #pragma once
 #ifndef BASE_DO_TRIANGULO_H
 #define BASE_DO_TRIANGULO_H
@@ -9,7 +5,7 @@
 // Tipo definido para const double.
 using measure_t = const double;
 
-// Funções.
+// FunÃ§Ãµes.
 
 double getBase();
 double getHeight();

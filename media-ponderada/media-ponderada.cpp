@@ -1,4 +1,4 @@
-// Media Ponderada.
+// Média Ponderada.
 
 #include "stdafx.h"
 #include <iostream>

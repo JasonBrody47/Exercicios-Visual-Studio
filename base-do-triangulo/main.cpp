@@ -1,7 +1,3 @@
-// Copyright (C) 2017 Luan Eduardo.
-//
-// Este arquivo é parte do programa BaseDoTriangulo.
-
 #include "stdafx.h"
 #include "base-do-triangulo.h"
 #include <iostream>

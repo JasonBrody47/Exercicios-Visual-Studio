@@ -1,5 +1,3 @@
-// LearnCpp: 5.3 — Switch statements, exercício 2.
-
 #include "stdafx.h"
 #include <iostream>
 #include <string>
@@ -56,7 +54,7 @@ std::string getAnimalName(Animal animal)
 
 void printNumberOfLegs(Animal name)
 {
-    // Os 'case' foram unificados, já que possuem o mesmo resultado.
+    // Os 'case' foram unificados, jÃ¡ que possuem o mesmo resultado.
     switch (name)
     {
     // Estes animais possuem 4 pernas.

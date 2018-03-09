@@ -1,20 +1,16 @@
-// Copyright (C) 2017 Luan Eduardo.
-//
-// Este arquivo é parte do programa AreaDocirculo.
-
 #include "stdafx.h"
 #include "area-do-circulo.h"
 #include <iostream>
 
 double getCircleRadius()
 {
-    // Repete até a entrada ser válida.
+    // Repete atÃ© a entrada ser vÃ¡lida.
     while (true) {
         std::cout << "Insira o raio do circulo > ";
         double circle_radius;
         std::cin >> circle_radius;
 
-        // Validação de Entrada.
+        // ValidaÃ§Ã£o de Entrada.
         if (std::cin.fail())
         {
             std::cin.clear();

@@ -1,4 +1,4 @@
-// Sequência de números em cascata.
+// SequÃªncia de nÃºmeros em cascata.
 
 #pragma once
 #ifndef FUNCTIONS_H
