@@ -1,4 +1,3 @@
-#pragma once
 #ifndef BASIC_CALCULATOR
 #define BASIC_CALCULATOR
 

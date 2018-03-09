@@ -1,6 +1,5 @@
 // LearnCpp2.10_Question4.
 
-#pragma once
 #ifndef PHYSICS_H
 #define PHYSICS_H
 

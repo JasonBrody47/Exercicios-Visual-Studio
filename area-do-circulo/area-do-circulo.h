@@ -1,4 +1,3 @@
-#pragma once
 #ifndef AREA_DO_CIRCULO_H
 #define AREA_DO_CIRCULO_H
 

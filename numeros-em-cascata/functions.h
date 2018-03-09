@@ -1,6 +1,5 @@
 // Sequência de números em cascata.
 
-#pragma once
 #ifndef FUNCTIONS_H
 #define FUNCTIONS_H
 

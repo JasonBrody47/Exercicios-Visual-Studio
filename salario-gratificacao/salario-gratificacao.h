@@ -1,6 +1,5 @@
 // Sálario com Gratificacao 1.
 
-#pragma once
 #ifndef SALARIO_GRATIFICACAO_H
 #define SALARIO_GRATIFICACAO_H
 

@@ -1,4 +1,3 @@
-#pragma once
 #ifndef BLACKJACK_GAME_H
 #define BLACKJACK_GAME_H
 

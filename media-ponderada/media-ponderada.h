@@ -1,6 +1,5 @@
 // Média Ponderada.
 
-#pragma once
 #ifndef MEDIAPONDERADA_H
 #define MEDIAPONDERADA_H
 

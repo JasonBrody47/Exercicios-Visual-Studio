@@ -1,4 +1,3 @@
-#pragma once
 #ifndef STUDENTS_AND_GRADES
 #define sTUDENTS_AND_GRADES
 

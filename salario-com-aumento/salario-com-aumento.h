@@ -1,6 +1,5 @@
 // Sálario com aumento.
 
-#pragma once
 #ifndef SALARIO_COM_AUMENTO_H
 #define SALARIO_COM_AUMENTO_H
 

@@ -1,6 +1,5 @@
 // Monster Info.
 
-#pragma once
 #ifndef MONSTER_H
 #define MONSTER_H
 
@@ -22,7 +21,7 @@ struct Monster
     int32_t health;
 };
 
-// Funções.
+// Funï¿½ï¿½es.
 
 string getNameType(Monster type);
 void printMonster(Monster monster);

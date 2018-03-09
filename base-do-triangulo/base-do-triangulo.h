@@ -1,4 +1,3 @@
-#pragma once
 #ifndef BASE_DO_TRIANGULO_H
 #define BASE_DO_TRIANGULO_H
 

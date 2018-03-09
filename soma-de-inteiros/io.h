@@ -1,6 +1,5 @@
 // LearnCpp1.12_Question3.
 
-#pragma once
 #ifndef INCLUDED_IO_H
 #define INCLUDED_IO_H
 

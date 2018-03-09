@@ -1,6 +1,5 @@
 // Jogo High-Low.
 
-#pragma once
 #ifndef GAME_H
 #define GAME_H
 

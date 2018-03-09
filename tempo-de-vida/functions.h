@@ -1,6 +1,5 @@
 // LearnCpp4.4b_Question1.
 
-#pragma once
 #ifndef FUNCTIONS_H
 #define FUNCTIONS_H
 
