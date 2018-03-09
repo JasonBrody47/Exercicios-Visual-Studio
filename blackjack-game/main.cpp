@@ -1,7 +1,5 @@
 #include <iostream>
 #include "blackjackgame.h"
-#include <array>
-#include <cstdint>
 #include <ctime>
 
 int main()

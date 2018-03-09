@@ -2,6 +2,9 @@
 #ifndef BLACKJACK_GAME_H
 #define BLACKJACK_GAME_H
 
+#include <array>
+#include <cstdint>
+
 namespace deck_limits
 {
     const int16_t suits_max{ 4 };

@@ -1,6 +1,5 @@
 #include <iostream>
 #include "blackjackgame.h"
-#include <array>
 
 void initializeDeck(deck_t &deck)
 {
