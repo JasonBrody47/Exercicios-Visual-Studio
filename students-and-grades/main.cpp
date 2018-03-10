@@ -2,9 +2,6 @@
 #include <string>
 #include "studentsandgrades.h"
 
-// TODO: Obter o input do usuario para cada nome e nota. 
-// TODO: Ordene o array pela nota (mais alta primeiro).
-// TODO: Imprima todos os nomes e notas em ordem ordenada.
 int main()
 {
     const int16_t number_of_students{ getNumberOfStudents() };
