@@ -38,7 +38,15 @@ age_t getUserAge()
 
 double calculateAgeForEachLetter(name_t name, age_t age)
 {
-    return (static_cast<double>(age) / name.length());
+    int16_t length;
+    for(int16_t i = 0; i < name.length(); ++i)
+    {
+        if(!(name[i] == ' '))
+            ++length;
+    }
+
+    return (static_cast<double>(age) / length);
+    //return (static_cast<double>(age) / name.length());
 }
 
 void printCalculatedAge(double life_time)
