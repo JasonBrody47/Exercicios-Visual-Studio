@@ -1,5 +1,4 @@
 #include <iostream>
-#include <utility>
 
 void swapTwoIntegers(int &num_1, int &num_2);
 
@@ -18,6 +17,8 @@ int main()
 
 void swapTwoIntegers(int &num_1, int &num_2)
 {
-    std::swap(num_1, num_2);
+    int temp{ num_1 };
+    num_1 = num_2;
+    num_2 = temp; 
 }
 
