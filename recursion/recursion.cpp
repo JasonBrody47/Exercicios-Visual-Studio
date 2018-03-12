@@ -15,6 +15,7 @@ int main()
     std::cout << "A soma de todos os numeros de " << integer << " e " <<
         sumNumbersInInteger(integer) << "\n";
 
+    // Funciona somante com números negativos.
     decimalToBinary(15);
 
     std::cin.get();
