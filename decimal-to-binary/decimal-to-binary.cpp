@@ -1,7 +1,6 @@
 #include <iostream>
 #include <cstdint>
 #include <string>
-#include <cmath>
 
 int32_t getUserNumber();
 bool isValidNumber();
