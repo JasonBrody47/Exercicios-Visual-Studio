@@ -23,3 +23,4 @@
 *.ipdb
 *.o
 .vscode/settings.json
+.vscode/launch.json
