@@ -22,3 +22,4 @@
 *.iobj
 *.ipdb
 *.o
+.vscode/settings.json
