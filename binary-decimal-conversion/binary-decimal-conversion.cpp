@@ -44,6 +44,7 @@ bool isValidNumber()
         std::cin.ignore(32767, '\n');
         return true;
     }
+    std::cin.ignore(32767, '\n');
     return false;
 }
 
