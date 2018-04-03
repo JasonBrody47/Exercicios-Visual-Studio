@@ -38,8 +38,15 @@ int32_t getNumber()
 
 void isEven(std::int32_t number)
 {
-    if (number % 2 == 0)
-        std::cout << "O numero e par" << "\n";
+    // Método comum por comparação de resto da divisão.
+    //if (number % 2 == 0)
+    //    std::cout << "O numero e par" << "\n";
+    //else
+    //    std::cout << "O numero e impar" << "\n";
+
+    // Método de comparação bit a bit.
+    if (number & 0b1)
+        std::cout << "O numero e impar" << "\n";
     else
         std::cout << "O numero e impar" << "\n";
 }
